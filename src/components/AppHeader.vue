@@ -7,6 +7,7 @@ export default{
 <template>
     <header>
         <div class="container-xl container-fluid-lg">
+            bvsfbdcbhjs
             Header
             <!-- nav provvisorio -->
             <router-link class="nav-item" :to="{name: 'home'}">Home</router-link>
