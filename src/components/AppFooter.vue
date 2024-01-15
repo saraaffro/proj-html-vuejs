@@ -7,7 +7,6 @@ export default{
 <template>
     <footer>
         <div class="container-xl container-fluid-lg">
-            ghjvsdfhj
             Footer
         </div>
     </footer>
