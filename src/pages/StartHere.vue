@@ -1,13 +1,17 @@
 <!-- sara -->
 <script>
+import SliderStartHere from '../components/SliderStartHere.vue';
 export default {
-name: "StartHere"
+name: "StartHere",
+components:{
+    SliderStartHere,
+}
 }
 </script>
 
 <template>
     <div class="container-xl container-fluid-lg">
-        <h1>Start here page</h1>
+        <SliderStartHere/>
     </div>
 </template>
 
