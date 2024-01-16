@@ -76,6 +76,7 @@ header{
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 500;
     padding: 20px 0;
     background-color: $bianco;
 

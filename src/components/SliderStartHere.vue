@@ -6,6 +6,7 @@ export default {
             slider:[
                 {
                     image: '../../public/stock-full-hd-03-480x298.jpg',
+                    focus: 'Awaken your gifts now',
                     id: 1,
                     title: 'Inspiring Curriculum',
                     text:'Learning with MaxCoach might a turning point in your life when you get communication with a great awakening of born talents.',
@@ -13,6 +14,7 @@ export default {
                 },
                 {
                     image: '../../public/stock-full-hd-04-480x298.jpg',
+                    focus: 'Open up a bright sky',
                     id: 2,
                     title: 'Life Consultancy',
                     text:'Ever feel drained of ideas and inspiratioin in life? Lost in no where and have no place to go? Find help and advice from MaxCoach specialists.',
@@ -20,6 +22,7 @@ export default {
                 },
                 {
                     image: '../../public/stock-full-hd-05-480x298.jpg',
+                    focus: 'Write your own life book',
                     id: 3,
                     title: 'Skill Advancement',
                     text:"Not only your skills are advanced, your inner self can get a new identity as well. You're the one who take the full control of your life book.",
@@ -77,15 +80,22 @@ export default {
 </script>
 
 <template>
-    <h1>Slider</h1>
         <div class="slider-show">
             <div class="thumb" :class="{'active' : slide.isActive}" v-for="(slide, index) in slider" :key="index">
                 <img :src="slide.image" alt="slide">
 
-                <div class="slide-info">
-                    <span class="slide-id">0{{ slide.id }}</span>
-                    <span class="slide-title">{{ slide.title }}</span>
-                    <div class="slide-text">{{ slide.text }}</div>
+                <div class="slide-info d-lg-flex align-items-center">
+                    <div class="slide-focus">
+                        {{ slide.focus }}
+                    </div>
+
+                    <div class="slide-description">
+                        <span class="slide-id">0{{ slide.id }}</span>
+                        <span class="line"></span>
+                        <span class="slide-title">{{ slide.title }}</span>
+                        <div class="slide-text">{{ slide.text }}</div>
+                    </div>
+                    
                 </div>
                 <div class="next-button" @click="nextSlide"><i class="fas fa-chevron-right"></i></div>
                 <div class="prev-button" @click="prevSlide"><i class="fas fa-chevron-left"></i></div>
@@ -110,22 +120,79 @@ export default {
         width: 100%;
     }
 
+    .slide-focus{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        width: 40%;
+        margin-right: 30px;
+
+        @media all and (max-width: 768px){
+            font-size: 30px;
+        }
+
+        @media all and (max-width: 576px){
+            font-size: 20px;
+        }
+    }
+
     .slide-info{
         position: absolute;
         bottom: 50px;
         left: 100px;
         color: $bianco;
+        margin-right: 40px;
 
         .slide-id{
             font-size: 30px;
             margin-right: 10px;
             font-weight: bold;
+
+            @media all and (max-width: 768px){
+                font-size: 20px;
+            }
+
+            @media all and (max-width: 576px){
+                font-size: 15px;
+            }
+        }
+
+        .line{
+            display: inline-block;
+            width: 40px;
+            background-color: $bianco;
+            height: 1px;
+            margin: 5px 10px;
         }
 
         .slide-title{
-            font-size: 15px;
+            font-size: 18px;
             text-transform: uppercase;
             font-weight: bold;
+
+            @media all and (max-width: 768px){
+                font-size: 15px;
+            }
+
+            @media all and (max-width: 576px){
+                font-size: 10px;
+            }
+        }
+
+        .slide-text{
+            font-size: 22px;
+            margin-top: 30px;
+            line-height: 35px;
+
+            @media all and (max-width: 768px){
+                font-size: 18px;
+            }
+
+            @media all and (max-width: 576px){
+                font-size: 13px;
+                line-height: 25px;
+                margin-top: 20px;
+            }
         }
     }
 
@@ -159,6 +226,8 @@ export default {
 .active{
     display: block;
 }
+
+
 
 
 </style>
