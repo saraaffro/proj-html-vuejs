@@ -10,6 +10,30 @@ export default {
         <h2>Take your interest and register an online class today to enjoy life fully</h2>
 
         <button class="download d-flex justify-content-center ">Get started for free</button>
+
+        <div class="row row-gap-3 justify-content-between">
+            <div class="col-12 col-lg-5">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-01.jpg" alt="img member">
+            </div>
+            <div class="col-12 col-lg-7">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-02.jpg" alt="img member">
+            </div>
+            <div class="col-12 col-md-7">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-03.jpg" alt="img member">
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-04.jpg" alt="img member">
+            </div>
+            <div class="col-12 col-lg-5">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-05.jpg" alt="img member">
+            </div>
+            <div class="col-12 col-md-7">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-06.jpg" alt="img member">
+            </div>
+            <div class="col-10 col-md-5 col-lg-4">
+                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-07.jpg" alt="img member">
+            </div>
+        </div>
     </section>
 </template>
 
@@ -60,6 +84,4 @@ section{
         }
     }
 }
-
-
 </style>

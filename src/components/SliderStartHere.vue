@@ -5,7 +5,7 @@ export default {
         return{
             slider:[
                 {
-                    image: '../../public/stock-full-hd-03-480x298.jpg',
+                    image: 'https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-hero-slide-01-bg.jpg',
                     focus: 'Awaken your gifts now',
                     id: 1,
                     title: 'Inspiring Curriculum',
@@ -13,7 +13,7 @@ export default {
                     isActive: true
                 },
                 {
-                    image: '../../public/stock-full-hd-04-480x298.jpg',
+                    image: 'https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-hero-slide-02-bg.jpg',
                     focus: 'Open up a bright sky',
                     id: 2,
                     title: 'Life Consultancy',
@@ -21,7 +21,7 @@ export default {
                     isActive: false,
                 },
                 {
-                    image: '../../public/stock-full-hd-05-480x298.jpg',
+                    image: 'https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-hero-slide-03-bg.jpg',
                     focus: 'Write your own life book',
                     id: 3,
                     title: 'Skill Advancement',
@@ -112,12 +112,14 @@ export default {
 
 .thumb{
     width: 100%;
+    height: calc(100vh - 80px);
     position: relative;
     margin-bottom: 50px;
     display: none;
+    overflow: hidden;
 
     img{
-        width: 100%;
+        height: 100%;
     }
 
     .slide-focus{
