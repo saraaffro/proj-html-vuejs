@@ -24,10 +24,10 @@ export default{
                 <button class="search d-none d-md-inline" type="submit"><i class="fas fa-search"></i></button>
                 
                 <!-- off canvas hamburger menu -->
-                <button class="hamb-menu d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fas fa-bars"></i></button>
-                <div class="offcanvas offcanvas-end my_offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <button class="hamb-menu d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fas fa-bars"></i></button>
+                <div class="offcanvas offcanvas-end my_offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <span class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        <span class="offcanvas-title" id="offcanvasExampleLabel">
                             <img src="../../public/dark-logo.png" alt="logo">
                         </span>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -45,19 +45,18 @@ export default{
                 <!-- dropdown searchbar -->
                 <button class="hamb-menu d-md-none" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-ellipsis-h"></i></button>
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="my_dropdown">
-                            <i class="far fa-user-circle nav-icon"></i>
-                                
-                            <!-- searchbar -->
-                            <input  type="search" placeholder="Search...">
-                            <button class="search" type="submit"><i class="fas fa-search"></i></button>
-                        </div>
-                    </li>
-                </ul>
-
-    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="my_dropdown">
+                                <i class="far fa-user-circle nav-icon"></i>
+                                    
+                                <!-- searchbar -->
+                                <input  type="search" placeholder="Search...">
+                                <button class="search" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
             
@@ -78,6 +77,7 @@ header{
     left: 0;
     right: 0;
     padding: 20px 0;
+    background-color: $bianco;
 
     .logo-container{
         width: 150px;
@@ -151,7 +151,6 @@ header{
     }
 
     .my_offcanvas{
-
         .offcanvas-header{
             height: 80px;
             
@@ -185,17 +184,13 @@ header{
                 padding: 20px 40px;
                 .nav-int-item{
                     display: block;
-                    color: white;
+                    color: $bianco;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.327);
                     padding: 20px 0;
                     font-weight: 300;
                 }
             }
-
-            
         }
-
-        
     }
 }
 
