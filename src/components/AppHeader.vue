@@ -13,7 +13,7 @@ export default{
                 <router-link class="nav-item" :to="{name: 'home'}">Home</router-link>
                 <router-link class="nav-item" :to="{name: 'starthere'}">Start Here</router-link>
                 <router-link class="nav-item" :to="{name: 'course'}">Courses</router-link>
-                <i class="fas fa-user-circle nav-item"></i>
+                <i class="far fa-user-circle nav-icon"></i>
             </nav>
             
         </div>
@@ -40,5 +40,9 @@ header{
         color: $verde-acqua;
         text-decoration: underline;
     }
+}
+
+.nav-icon{
+    color: black;
 }
 </style>
