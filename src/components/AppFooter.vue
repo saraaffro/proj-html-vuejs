@@ -28,7 +28,7 @@ export default{
                 <div id="lista2">
                     <h4>Explore</h4>
                     <ul>
-                        <li><a href="../pages/StartHere.vue">Start here</a></li>
+                        <li><a href="/start-here">Start here</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">About us</a></li>
                     </ul>
@@ -37,7 +37,7 @@ export default{
                 <div id="lista3">
                     <ul>
                         <li><a href="#">Success story</a></li>
-                        <li><a href="../pages/Courses.vue">Courses</a></li>
+                        <li><a href="/Course">Courses</a></li>
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
