@@ -24,32 +24,33 @@ export default{
                     </ul>
                 </div>
 
-                
-                <div id="lista2">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="/start-here">Start here</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About us</a></li>
-                    </ul>
-                </div>
+                <div class="flex">
+                    <div id="lista2">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="/start-here">Start here</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
 
-                <div id="lista3">
-                    <ul>
-                        <li><a href="#">Success story</a></li>
-                        <li><a href="/Course">Courses</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
+                    <div id="lista3">
+                        <ul>
+                            <li><a href="#">Success story</a></li>
+                            <li><a href="/Course">Courses</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
 
-                <div id="lista4">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="#">Membership</a></li>
-                        <li><a href="#">Purchase guide</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Terms of services</a></li>
-                    </ul>
+                    <div id="lista4">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Purchase guide</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Terms of services</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -62,9 +63,10 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/partial/variables' as *;
 
     #bg{
-        background-color: rgb(240, 240, 240);
+        background-color: $bianco-sporco;
         padding: 4% 10% 4% 1.5%;
         display: flex;
         flex-direction: column;
@@ -72,6 +74,7 @@ export default{
     .flex{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     h4{
@@ -85,14 +88,14 @@ export default{
 
     li{
         margin-bottom: 10px;
-        color: #696969;
+        color: $grigio;
     }
 
     a{
-        color: #696969;
+        color: $grigio;
 
         &:hover{
-            color: #20AD96;
+            color: $verde-acqua;
         }
     }
 
@@ -100,22 +103,24 @@ export default{
         font-size: 25px;
         margin-right: 10%;
         margin-top: 20px;
-        color: rgb(165, 165, 165);
+        color: $grigio;
         
         &:hover{
-            color: #20AD96;
+            color: $verde-acqua;
         }
     }
 
     #lista3{
-        margin: 44px -10% 0 -10%;
+        margin: 44px 40px 0 30px;
     }
 
     span{
-        color: #696969;  
+        color: $grigio;  
     }
 
     #center{
         margin: 50px auto 0;
     }
+
+
 </style>
