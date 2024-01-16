@@ -66,10 +66,11 @@ section{
 
     h4{
         color: $blu-scuro;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         text-align: center;
         margin-bottom: 20px;
+        letter-spacing: 1px;
     }
 
     h2{

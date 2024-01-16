@@ -2,12 +2,17 @@
 <script>
 import SliderStartHere from '../components/SliderStartHere.vue';
 import StepToSuccess from '../components/StepToSuccess.vue';
+import TeamMembers from '../components/TeamMembers.vue';
+import FAQ from '../components/FAQ.vue';
+
 
 export default {
     name: "StartHere",
     components:{
         SliderStartHere,
-        StepToSuccess
+        StepToSuccess,
+        TeamMembers,
+        FAQ
     }
 }
 </script>
@@ -16,6 +21,8 @@ export default {
     <div class="container-xl container-fluid-lg">
         <SliderStartHere/>
         <StepToSuccess/>
+        <TeamMembers/>
+        <FAQ/>
     </div>
 </template>
 
