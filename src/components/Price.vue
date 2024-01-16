@@ -74,7 +74,7 @@ data(){
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6" v-for="card in rates" :key="card">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center" v-for="card in rates" :key="card">
                         <CardPrice :card="card"/>
                     </div>
                 </div>
