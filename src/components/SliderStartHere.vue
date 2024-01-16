@@ -30,11 +30,11 @@ export default {
         }
     },
     methods:{
-        addClass(classname){
-            this.slider[this.activeElement].classList.add(classname);
+        addClass(classname) {
+            this.slider[this.activeElement].isActive = true;
         },
-        removeClass(classname){
-            this.slider[this.activeElement].classList.remove(classname);
+        removeClass(classname) {
+            this.slider[this.activeElement].isActive = false;
         },
         nextSlide() {
             // Rimuovo la classe "active" dalla slide attualmente attiva
@@ -55,7 +55,23 @@ export default {
 
             // Aggiungo la classe "active" alla nuova slide attiva
             this.slider[this.activeElement].isActive = true;
+        },
+        startTimer() {
+            setInterval(() => {
+                if (this.activeElement < this.slider.length - 1) {
+                    this.removeClass("active");
+                    this.activeElement++;
+                    this.addClass("active");
+                } else {
+                    this.removeClass("active");
+                    this.activeElement = 0;
+                    this.addClass("active");
+                }
+            }, 4000);
         }
+    },
+    mounted(){
+        this.startTimer();
     }
 }
 </script>
