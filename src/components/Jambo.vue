@@ -76,7 +76,7 @@ export default {
             <div class="col-lg-12">
                 <div class="sponsor">
                     <ul>
-                        <li v-for="sponsor in sponsors">
+                        <li v-for="(sponsor, index) in sponsors" :key="index" :class="{ 'd-none d-md-inline': index >= sponsors.length - 3 }">
                             <a :href="sponsor.url">
                                 <img :src="sponsor.img" alt="sponsor">
                             </a>

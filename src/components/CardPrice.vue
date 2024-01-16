@@ -63,7 +63,6 @@ props:{
     }
 
     .text{
-        // margin-left: -50px;
         margin-top: 20px;
     }
 

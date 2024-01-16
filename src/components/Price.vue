@@ -78,8 +78,16 @@ data(){
                         <CardPrice :card="card"/>
                     </div>
                 </div>
-            </div>    
+            </div>  
+            
+                <div class="d-flex justify-content-center mt-5">
+                    <button>
+                        View all courses
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
         </div>
+         
     
 </template>
 
@@ -95,6 +103,21 @@ data(){
 
             .title{
                 color: rgb(163, 160, 160);
+            }
+        }
+
+        button{
+            background-color: $verde-acqua;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            color: white;
+            margin: 20px 0;
+            transition: background-color 0.5s ease-in-out;
+            
+
+            &:hover {
+                background-color: $blu-scuro; 
             }
         }
     }
