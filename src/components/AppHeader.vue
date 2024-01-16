@@ -25,13 +25,20 @@ export default{
                 
                 <!-- off canvas hamburger menu -->
                 <button class="hamb-menu d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fas fa-bars"></i></button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-end my_offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                        <span class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            <img src="../../public/dark-logo.png" alt="logo">
+                        </span>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                        <div class="menu-int">
+                            <router-link class="nav-int-item" :to="{name: 'home'}">Home</router-link>
+                            <router-link class="nav-int-item" :to="{name: 'starthere'}">Start Here</router-link>
+                            <router-link class="nav-int-item" :to="{name: 'course'}">Courses</router-link>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -66,11 +73,11 @@ export default{
 @use '../styles/partial/variables' as *;
 
 header{
-    height: 100px;
+    height: 80px;
     position: fixed;
     left: 0;
     right: 0;
-    padding: 40px 0;
+    padding: 20px 0;
 
     .logo-container{
         width: 150px;
@@ -141,6 +148,54 @@ header{
        &:hover{
         color: $verde-acqua;
        }
+    }
+
+    .my_offcanvas{
+
+        .offcanvas-header{
+            height: 80px;
+            
+
+            .offcanvas-title{
+            width: 150px;
+            margin-left: 20px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .btn-close{
+                opacity: 1;
+                font-size: 20px;
+            }
+        }
+
+        .offcanvas-body{
+            background-image: url('../../public/mobile-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+
+            .menu-int{
+                background-color: #3f3a64;
+                opacity: 0.9;
+                width: 100%;
+                height: 100%;
+                padding: 20px 40px;
+                .nav-int-item{
+                    display: block;
+                    color: white;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.327);
+                    padding: 20px 0;
+                    font-weight: 300;
+                }
+            }
+
+            
+        }
+
+        
     }
 }
 
