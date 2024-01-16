@@ -6,7 +6,7 @@ name: "Home"
 
 <template>
     <div class="container-xl container-fluid-lg">
-        <h1>Homepage</h1>
+        
     </div>
 </template>
 
