@@ -75,6 +75,7 @@
         position: relative;
         text-decoration: none;
         display: inline-block;
+        font-weight: 600;
 
             &:before {
                 content: '';
