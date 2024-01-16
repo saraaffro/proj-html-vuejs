@@ -36,7 +36,7 @@ export default {
 
 <!-- DA INSERIRE BACKGROUND CHE SI MUOVE ALL'IMG -->
 <template>
-    <div class="container-jambo">
+    <div class="container-jambo mt-4">
 
         <div class="row">
 
