@@ -51,51 +51,69 @@
 <style lang="scss" scoped>
 @use '../styles/partial/variables' as *;
 
-  .container-benefit{
-    margin: 100px 0;
+.container-benefit {
+  margin: 100px 0;
 
-    .course-card{
-        padding: 20px;
-    }
+  .course-card {
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
 
-  }
-
-   .title{
-        text-align: center;
-    }
-
-    .color-smart{
+    &:hover {
+      transform: scale(1.05); 
+      
+      a {
         color: $verde-acqua;
-        font-weight: 200;
-    } 
-
-    // animazione start here, get, start now
-    a {
-        color: $grigio; 
-        position: relative;
-        text-decoration: none;
-        display: inline-block;
-        font-weight: 600;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                height: 0.5px;
-                background-color: rgb(216, 206, 206); 
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: transform 0.5s ease-in-out;
-            }
-
-            &:hover {
-                color: $verde-acqua; 
-                &:before {
-                transform: scaleX(1);
-                }
-            }
+        
+        &:before {
+          transform: scaleX(1);
         }
+      }
+    }
 
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h4 {
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+
+    a {
+      color: $grigio;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 600;
+      transition: color 0.3s ease-in-out;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.5px;
+        background-color: rgb(216, 206, 206);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.color-smart {
+  color: $verde-acqua;
+  font-weight: 200;
+}
 </style>
