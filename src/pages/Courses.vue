@@ -1,3 +1,4 @@
+<!-- leandro -->
 <script>
 export default {
     name: "Courses"
