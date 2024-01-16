@@ -79,17 +79,16 @@ section{
         line-height: 50px;
         font-weight: 700;
         width: 60%;
-        margin: 0 auto;
+        margin: 0 auto 80px;
 
         @media all and (max-width: 992px){
-            font-size: 27px;
+            font-size: 30px;
             line-height: 35px;
-            width: 65%;
+            width: 100%;
         }
         
         @media all and (max-width: 768px){
-            font-size: 22px;
-            width: 80%;
+            font-size: 25px;
         }
     }
 
@@ -98,7 +97,7 @@ section{
         font-size: 25px;
         letter-spacing: 3px;
         font-weight: 600;
-        margin-top: 80px;
+        margin-top: 40px;
         margin-bottom: 30px;
     }
 
