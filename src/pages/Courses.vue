@@ -1,7 +1,13 @@
 <!-- leandro -->
 <script>
+import CardCourses from '../components/CardCourses.vue'
+
 export default {
-    name: "Courses"
+    name: "Courses",
+
+    components:{
+        CardCourses
+    }
 }
 </script>
 
@@ -17,7 +23,9 @@ export default {
 
         <div id="relatedcourses">
             <h3>Related Courses</h3>
-            
+            <div id="visualcards">
+                <CardCourses/>
+            </div>
         </div>
 
 
@@ -50,6 +58,13 @@ export default {
     h1,h3{
         text-align: center;
         margin: 5% 0;
+    }
+
+    #visualcards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
 </style>
