@@ -41,33 +41,98 @@ export default {
                     students:"81 Students",
                 },
             ],
+            circles: [
+                { active: true },
+                { active: false }
+            ],
+            currentActiveIndex: 0
+        }
+    },
+
+    computed: {
+        // ritorna le prime 3 cards
+        firstThree() {
+            return this.cards.slice(0, 3);
+        },
+        // ritorna le ultime 3 cards
+        lastThree() {
+            return this.cards.slice(-3);
+        }
+    },
+
+    methods:{
+        // aggiornamento stato cerchio attivo
+        toggleCircle(index) {
+            if(this.currentActiveIndex !== index){
+                this.circles[this.currentActiveIndex].active = false
+                this.currentActiveIndex = index;
+                this.circles[index].active = true
+            }
         }
     }
 }
 </script>
 
 <template>
-    <div id="card" v-for="(card,i) in cards" :key="i">
-        <img :src="card.src" alt="card">
-        <div>
-            <h4>{{ card.price }}</h4>
-            <h5><a href="#">{{ card.typename }}</a></h5>
-            <span>{{ card.lessons }}</span>
-            <span>{{ card.students }}</span>
+    
+    <div class="container_cards">
+        <div id="card" v-if="circles[0].active" v-for="(card,i) in firstThree" :key="i">
+            <img :src="card.src" alt="card">
+            <div>
+                <h4>{{ card.price }}</h4>
+                <h5><a href="#">{{ card.typename }}</a></h5>
+                <span>{{ card.lessons }}</span>
+                <span>{{ card.students }}</span>
+            </div>
         </div>
-        
-
     </div>
+      
+    <div class="container_cards">
+        <div id="card" v-if="circles[1].active" v-for="(card,i) in lastThree" :key="i">
+            <img :src="card.src" alt="card">
+            <div>
+                <h4>{{ card.price }}</h4>
+                <h5><a href="#">{{ card.typename }}</a></h5>
+                <span>{{ card.lessons }}</span>
+                <span>{{ card.students }}</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="container_button">
+        <div
+        v-for="(circle, index) in circles"
+        :key="index"
+        :class="{ 'circle': true, 'circle_active': circle.active }"
+        @click="toggleCircle(index)"
+        ></div>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>
     @use '../styles/partial/variables' as *;
 
+    .container_cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        transition-duration: 1000ms;
+        transform: translate3d(0px, 0px, 0px);
+    }
+
     #card{
         width: calc((100% / 3) - 20px);
+        overflow: hidden;
 
         &:hover{
             background-color: white;
+            cursor: pointer;
+
+            img{
+                transform: scale(1.05); 
+            }
         }
     }
 
@@ -77,9 +142,10 @@ export default {
     }
 
     img{
-        width: 100%;
+        max-width: 100%;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+        transition: transform 0.25s linear;
     }
 
     h4{
@@ -102,6 +168,38 @@ export default {
 
     span:first-of-type{
         margin-right: 30px;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .circle{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 10px;
+
+        &:hover{  
+            background-color: black;
+            width: 17px;
+            height: 17px;    
+        }
+
+    }
+
+    #container_button{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .circle_active{
+        background-color: black;
+        width: 17px;
+        height: 17px;
     }
 
 </style>
