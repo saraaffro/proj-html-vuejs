@@ -80,11 +80,11 @@ export default {
 </script>
 
 <template>
-        <div class="slider-show ">
+        <div class="slider-show">
             <div class="thumb" :class="{'active' : slide.isActive}" v-for="(slide, index) in slider" :key="index">
                 <img :src="slide.image" alt="slide">
 
-                <div class="slide-info d-lg-flex align-items-center">
+                <div class="slide-info d-lg-flex align-items-center justify-content-center">
                     <div class="slide-focus">
                         {{ slide.focus }}
                     </div>
@@ -140,10 +140,15 @@ export default {
 
     .slide-info{
         position: absolute;
-        bottom: 50px;
-        left: 100px;
+        bottom: 30px;
+        left: 20%;
         color: $bianco;
-        margin-right: 40px;
+        width: 60%;
+
+        @media all and (max-width: 1200px){
+            width: 90%;
+            left: 5%;
+        }
 
         .slide-id{
             font-size: 30px;
