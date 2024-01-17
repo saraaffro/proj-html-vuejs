@@ -11,27 +11,69 @@ export default {
 
         <button class="download d-flex justify-content-center ">Get started for free</button>
 
-        <div class="row row-gap-3 justify-content-between">
+        <div class="row row-gap-2 justify-content-between">
+            <div class="col-12 col-xxl-5 p-0">
+                <div class="member">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-01.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Lonnie Marks</div>
+                        <div class="role">Tutor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xxl-7">
+                <div class="member">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-02.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Britney Salker</div>
+                        <div class="role">Educator</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 p-0">
+                <div class="member">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-03.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Bronnies Wallz</div>
+                        <div class="role">Alumnis</div>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-lg-5">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-01.jpg" alt="img member">
+                <div class="member">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-04.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Mia Paulo</div>
+                        <div class="role">Writer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-5">
+                <div class="member">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-05.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Lina Esthers</div>
+                        <div class="role">Author</div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-lg-7">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-02.jpg" alt="img member">
+                <div class="member">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-06.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Lorean McPhils</div>
+                        <div class="role">Designer</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-7">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-03.jpg" alt="img member">
-            </div>
-            <div class="col-12 col-md-5">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-04.jpg" alt="img member">
-            </div>
-            <div class="col-12 col-lg-5">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-05.jpg" alt="img member">
-            </div>
-            <div class="col-12 col-md-7">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-06.jpg" alt="img member">
-            </div>
-            <div class="col-10 col-md-5 col-lg-4">
-                <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-07.jpg" alt="img member">
+            <div class="col-10 col-lg-5 col-xl-4 p-0">
+                <div class="member small">
+                    <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-07.jpg" alt="img member">
+                    <div class="member-info">
+                        <div class="name">Anna Muray</div>
+                        <div class="role">Writer</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -42,6 +84,8 @@ export default {
 
 section{
     padding-top: 60px;
+    max-width: 100%;
+    overflow-x: hidden;
 
     h4{
         color: $blu-scuro;
@@ -81,6 +125,59 @@ section{
 
         &:hover {
             background-color: $blu-scuro; 
+        }
+    }
+
+    .member{
+        width: 100%;
+        position: relative;
+
+        &:hover .member-info{    
+            opacity: 1;
+        }
+
+        img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .member-info{
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.518);
+            width: 100%;
+            height: 100%;
+            color: $bianco;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s ease-in-out;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name{
+                font-size: 35px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .role{
+                font-size: 15px;
+                font-weight: 200;
+            }
+        }
+
+       
+    }
+
+    .member.small{
+        width: 80%;
+
+        @media all and (min-width: 992px){
+            width: 100%;
         }
     }
 }
