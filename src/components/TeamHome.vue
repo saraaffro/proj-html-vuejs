@@ -25,7 +25,7 @@ components:{
             <h2>You can be your own guiding star with our help!</h2>
         </div>
 
-        <div class="text-center">
+        <div class="text-center py-4">
             <button class="btn">Get started now</button>
         </div>
     
