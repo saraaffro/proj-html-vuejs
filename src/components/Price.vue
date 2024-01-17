@@ -64,7 +64,7 @@ data(){
 
 <template>
     
-        <div class="container-xl container-fluid-lg bg">
+        <div class="container-fluid-lg bg">
             <div class="row">
                 <div class="col">
                     <div class="text">

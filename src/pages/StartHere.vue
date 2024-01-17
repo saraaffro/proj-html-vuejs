@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-xl container-fluid-lg">
+    <div class="container-fluid">
         <SliderStartHere/>
         <StepToSuccess/>
         <TeamMembers/>
