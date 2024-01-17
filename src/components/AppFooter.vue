@@ -9,8 +9,8 @@ export default{
     <footer>
         <div id="bg" class="container-fluid-lg">
             <div class="container-xl">
-                <div class="flex">
-                    <div id="lista1">
+                <div class="flex row">
+                    <div id="lista1" class="col-12 col-lg-6">
                         <h4>Address</h4>
                         <ul>
                             <li>382 NE 191st St # 87394 Miami, FL 33179-3899</li>
@@ -25,33 +25,31 @@ export default{
                         </ul>
                     </div>
 
-                    <div class="flex">
-                        <div id="lista2">
-                            <h4>Explore</h4>
-                            <ul>
-                                <li><a href="/start-here">Start here</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">About us</a></li>
-                            </ul>
-                        </div>
+                    <div id="lista2" class="col-6 col-md-4 col-lg-2">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="/start-here">Start here</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
 
-                        <div id="lista3">
-                            <ul>
-                                <li><a href="#">Success story</a></li>
-                                <li><a href="/Course">Courses</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
+                    <div id="lista3" class="col-6 col-md-4 col-lg-2">
+                        <ul>
+                            <li><a href="#">Success story</a></li>
+                            <li><a href="/Course">Courses</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
 
-                        <div id="lista4">
-                            <h4>Information</h4>
-                            <ul>
-                                <li><a href="#">Membership</a></li>
-                                <li><a href="#">Purchase guide</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Terms of services</a></li>
-                            </ul>
-                        </div>
+                    <div id="lista4" class="col-12 col-md-4 col-lg-2">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Purchase guide</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Terms of services</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -69,19 +67,19 @@ export default{
     @use '../styles/partial/variables' as *;
 
     #bg{
-        background-color: $bianco-sporco;
+        background-color: #f8f8f8;
         padding: 4% 1.5% 4% 0;
-        // display: flex;
-        // flex-direction: column;
     }
-    .flex{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+    // .flex{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    // }
 
     h4{
         margin-bottom: 15px;
+        font-size: 18px;
+        margin-top: 50px;
     }
 
     ul{
@@ -89,12 +87,14 @@ export default{
     }
 
     li{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         color: $grigio;
+        font-size: 13px;
     }
 
     a{
         color: $grigio;
+        transition: color 0.3s ease-in-out;
 
         &:hover{
             color: $verde-acqua;
@@ -103,9 +103,10 @@ export default{
 
     .fa-brands{
         font-size: 25px;
-        margin-right: 10%;
+        margin-right: 25px;
         margin-top: 20px;
-        color: $grigio;
+        color: #b1b1b1;
+        transition: color 0.3s ease-in-out;
         
         &:hover{
             color: $verde-acqua;
@@ -113,7 +114,7 @@ export default{
     }
 
     #lista3{
-        margin: 44px 40px 0 30px;
+        margin: 90px 0 0;
     }
 
     span{
@@ -123,6 +124,10 @@ export default{
     #center{
         margin: 50px 0 0 0;
         text-align: center;
+    }
+
+    .row{
+        width: 100%;
     }
 
 
