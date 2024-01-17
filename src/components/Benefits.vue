@@ -8,7 +8,7 @@
 <template>
     <div class="benefit container-xl">
       <div class="title mt-4">
-        <span>MAXCOACH AVAILABLE COURSES</span>
+        <span class="maxcoach">MAXCOACH AVAILABLE COURSES</span>
         <h2 class="mt-4">Access <span class="color-smart">Smart Tutoring</span> Program For Benefits.</h2>
       </div>
 
@@ -115,5 +115,9 @@
 .color-smart {
   color: $verde-acqua;
   font-weight: 200;
+}
+
+.maxcoach{
+  color: #c6c4d1;
 }
 </style>
