@@ -338,6 +338,7 @@ section{
         @media all and (min-width: 1400px){
             position: relative;
             left: 650px;
+            margin-bottom: 60px;
         }
     }
 
