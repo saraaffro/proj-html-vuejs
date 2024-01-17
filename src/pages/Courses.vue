@@ -22,10 +22,8 @@ export default {
         </div>
 
         <div id="relatedcourses">
-            <h3>Related Courses</h3>
-            <div id="visualcards">
-                <CardCourses/>
-            </div>
+            <h3>Related Courses</h3> 
+            <CardCourses/> 
         </div>
 
 
@@ -60,11 +58,5 @@ export default {
         margin: 5% 0;
     }
 
-    #visualcards{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
 
 </style>

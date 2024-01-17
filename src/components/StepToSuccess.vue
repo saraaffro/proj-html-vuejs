@@ -9,6 +9,8 @@ export default {
         <h4>FOUR MAJOR STEPS TO SUCCESS</h4>
         <h2>Best chances for expanding your success to the max</h2>
 
+        <div class="line-center"></div>
+        <i class="fa-regular fa-circle-dot"></i>
         <h3>BROADENING</h3>
         <div class="step d-md-flex align-items-center">
             <div class="img-container">
@@ -20,18 +22,18 @@ export default {
             </div>
         </div>
 
-        <h3>SCHEDULING</h3>
-        <div class="step d-md-flex align-items-center">
-            <div class="img-container">
+        <h3 class="reverse">SCHEDULING</h3>
+        <div class="step reverse d-md-flex flex-md-row-reverse align-items-center">
+            <div class="img-container reverse">
                 <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-timeline-photo-02.jpg" alt="scheduling img">
             </div>
-            <div class="step-info">
+            <div class="step-info reverse">
                 <h5>#2 Flexible schedule & environment</h5>
                 <p class="step-text">Taking an online course also means that you don’t have to commute to class, which means less time spent on the bus and more study time sitting on your couch, the sound of a crackling fireplace in the background. You no longer have to worry about missing an important class!</p>
             </div>
         </div>
 
-        <h3>SELF-DISCIPLINE</h3>
+        <h3 id="discipline">SELF-DISCIPLINE</h3>
         <div class="step d-md-flex align-items-center">
             <div class="img-container">
                 <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-timeline-photo-03.jpg" alt="self-discipline img">
@@ -42,12 +44,12 @@ export default {
             </div>
         </div>
 
-        <h3>INVESTMENT</h3>
-        <div class="step d-md-flex align-items-center">
-            <div class="img-container">
+        <h3 class="reverse">INVESTMENT</h3>
+        <div class="step reverse d-md-flex flex-md-row-reverse align-items-center">
+            <div class="img-container reverse">
                 <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-timeline-photo-04.jpg" alt="investment img">
             </div>
-            <div class="step-info">
+            <div class="step-info reverse">
                 <h5>#4 Smart investment into future</h5>
                 <p class="step-text">Studying online means that you pay the tuition fee, possibly book supplies, an online application fee, and few other items. You don’t, however, incur the costs of housing (which can range up to $12,000 per year) and transportation, which translates to lower debts and more savings.</p>
             </div>
@@ -63,6 +65,85 @@ export default {
 
 section{
     padding-top: 30px;
+    position: relative;
+    overflow-y: hidden;
+
+    .line-center{
+        width: 2px;
+        background-color: #e2e2e8;
+        height: 100%;
+        position: absolute;
+        left: 30px;
+        top: 150px;
+
+        @media all and (min-width: 768px){
+            position: absolute;
+            left: 49%;
+            top: 170px;
+            transform: translate(-49%, 0);
+        }
+
+        @media all and (min-width: 992px){
+            position: absolute;
+            left: 45%;
+            top: 220px;
+            transform: translate(-45%, 0);
+        }
+
+        @media all and (min-width: 1200px){
+            position: absolute;
+            left: 44%;
+            top: 230px;
+            transform: translate(-44%, 0);
+        }
+
+        @media all and (min-width: 1400px){
+            position: absolute;
+            left: 48%;
+            top: 230px;
+            transform: translate(-48%, 0);
+        }
+    }
+
+    .fa-circle-dot{
+        font-size: 30px;
+        color: $verde-acqua;
+        position: absolute;
+        top: 218px;
+        left: 16px;
+
+        @media all and (min-width: 500px){
+            top: 183px;
+        }
+
+        @media all and (min-width: 768px){
+            position: absolute;
+            left: 49%;
+            top: 185px;
+            transform: translate(-49%, 0);
+        }
+
+        @media all and (min-width: 992px){
+            position: absolute;
+            left: 45%;
+            top: 250px;
+            transform: translate(-45%, 0);
+        }
+
+        @media all and (min-width: 1200px){
+            position: absolute;
+            left: 44%;
+            top: 250px;
+            transform: translate(-44%, 0);
+        }
+
+        @media all and (min-width: 1400px){
+            position: absolute;
+            left: 48%;
+            top: 250px;
+            transform: translate(-48%, 0);
+        }
+    }
 
     h4{
         color: $blu-scuro;
@@ -98,45 +179,134 @@ section{
         letter-spacing: 3px;
         font-weight: 600;
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+
+        @media all and (min-width: 769px){
+            position: relative;
+            left: 180px;
+        }
+
+        @media all and (min-width: 992px){
+            position: relative;
+            left: 200px;
+        }
+
+        @media all and (min-width: 1400px){
+            position: relative;
+            left: 330px;
+        }
     }
 
-    .img-container{
+    h3.reverse{
+        @media all and (min-width: 769px){
+            position: relative;
+            left: 250px;
+        }
+
+        @media all and (min-width: 992px){
+            position: relative;
+            left: 280px;
+        }
+
+        @media all and (min-width: 1400px){
+            position: relative;
+            left: 330px;
+        }
+    }
+
+    #discipline{
+
+        @media all and (min-width: 769px){
+            left: 120px;
+        }
+
+        @media all and (min-width: 992px){
+            left: 150px;
+        }
+
+        @media all and (min-width: 1400px){
+            position: relative;
+            left: 280px;
+        }
+    }
+
+    .step{
+        margin-left: 50px;
+        .img-container{
         width: 450px;
 
-        @media all and (min-width: 769px){
-            width: 600px;
+            @media all and (min-width: 769px){
+                width: 400px;
+            }
+
+            @media all and (min-width: 1400px){
+                width: 600px;
+            }
+
+            img{
+                border-radius: 5px;
+                margin-bottom: 30px;
+                width: 100%;
+            }
         }
 
-        img{
-            border-radius: 5px;
-            margin-bottom: 30px;
-            width: 100%;
-        }
-    }
+        .step-info{
+            @media all and (min-width: 769px){
+                padding-left: 90px;
+                flex-basis: 65%;
+            }
+            
+            h5{
+                font-size: 25px;
+                margin-bottom: 30px;
+                font-weight: 600;
+            }
 
-    .step-info{
-        @media all and (min-width: 769px){
-            padding-left: 90px;
-            flex-basis: 65%;
-        }
-        
-        h5{
-            font-size: 25px;
-            margin-bottom: 30px;
-            font-weight: 600;
+            .step-text{
+                font-weight: 200;
+                opacity: 0.7;
+                width: 450px;
+                font-size: 18px;
+                line-height: 37px;
+
+                @media all and (min-width: 769px){
+                    width: 100%;
+                }
+            }
         }
 
-        .step-text{
-            font-weight: 200;
-            opacity: 0.7;
-            width: 450px;
-            font-size: 18px;
-            line-height: 37px;
+        .step-info.reverse{
 
             @media all and (min-width: 769px){
-            width: 100%;
+                padding: 0;
+                flex-basis: 35%;
+                margin-right: 130px;
+                text-align: end;
+            }
         }
+    
+    }
+
+    .step.reverse{
+        @media all and (min-width: 679px){
+            margin-right: 20px;
+        }
+
+        @media all and (min-width: 769px){
+            margin-right: 20px;
+        }
+
+        @media all and (min-width: 992px){
+            margin-right: 100px;
+        }
+
+        @media all and (min-width: 1200px){
+            margin-right: 160px;
+        }
+
+        @media all and (min-width: 1400px){
+            margin-right: 0;
         }
     }
 
