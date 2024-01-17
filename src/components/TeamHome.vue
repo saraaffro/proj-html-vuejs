@@ -1,9 +1,42 @@
 <!-- andrea -->
 <script>
-    export default{
-        name: "TeamHome",
-        
-    }
+export default {
+  name: "TeamHome",
+  data() {
+    return {
+      slides: [
+        {
+          content: "The MaxCoach team works really hard to ensure high quality",
+          text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation into effective methods to be adopted for learners of all levels.",
+          img: "/public/testimonial-avata-01.jpg",
+          name: "LUVIC DUBBLE",
+          job: "/ Private Tutor",
+        },
+        {
+          content: "High level of efficiency and scientific teaching methods",
+          text: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+          img: "/public/testimonial-avata-02.jpg",
+          name: "MINA HOLLACE",
+          job: "/ Freelancer",
+        },
+        {
+          content: "It's a choice of quality for people with special needs",
+          text: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+          img: "/public/testimonial-avata-03.jpg",
+          name: "LUVIC DUBBLE",
+          job: "/ Private Tutor",
+        },
+        {
+          content: "Professional team of specialists and passionate mentors at reach",
+          text: "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+          img: "/public/testimonial-avata-04.jpg",
+          name: "LUVIC DUBBLE",
+          job: "/ Private Tutor",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
@@ -22,59 +55,18 @@
                 <!-- radio buttons end -->
 
                 <!-- sliude image start -->
-                <div class="slide first">
-                    <h4>The MaxCoach team works really hard to ensure high quality</h4>
-                    <p>
-                        I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.
-                    </p>
+                <div v-for="(slide, index) in slides" :key="index" :class="{ 'slide': true, 'first': index === 0 }">
+                    <h4>{{ slide.content }}</h4>
+                    <p>{{ slide.text }}</p>
                     <div class="d-flex align-items-center mt-5">
-                        <img src="/public/testimonial-avata-01.jpg" alt="avatar1">
-                        <div class="avatar mx-4">
-                            <h6>LUVIC DUBBLE</h6>
-                            <span class="job">/ Private Tutor</span>
-                        </div>
+                        <img :src="slide.img" :alt="'avatar' + (index + 1)">
+                    <div class="avatar mx-4">
+                        <h6>{{ slide.name }}</h6>
+                        <span class="job">{{ slide.job }}</span>
                     </div>
                 </div>
-
-                <div class="slide">
-                    <h4>High level of efficiency and scientific teaching methods</h4>
-                    <p>
-					    I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.
-                    </p>
-                    <div class="d-flex align-items-center mt-5">
-                        <img src="/public/testimonial-avata-02.jpg" alt="avatar2">
-                        <div class="avatar mx-4">
-                            <h6>MINA HOLLACE</h6>
-                            <span class="job">/ Freelancer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <h4>It's a choice of quality for people with special needs</h4>
-                    <p>
-                        I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.
-                    </p>
-                    <div class="d-flex align-items-center mt-5">
-                        <img src="/public/testimonial-avata-03.jpg" alt="avatar3">
-                        <div class="avatar mx-4">
-                            <h6>LUVIC DUBBLE</h6>
-                            <span class="job">/ Private Tutor</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <h4>Professional team of specialists and passionate mentors at reach</h4>
-                    <p>
-                        I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.
-                    </p>
-                    <div class="d-flex align-items-center mt-5">
-                        <img src="/public/testimonial-avata-04.jpg" alt="avatar4">
-                        <div class="avatar mx-4">
-                            <h6>LUVIC DUBBLE</h6>
-                            <span class="job">/ Private Tutor</span>
-                        </div>
-                    </div>
-                </div>
+                
+            </div>
                 <!-- slide image end -->
             </div>
 

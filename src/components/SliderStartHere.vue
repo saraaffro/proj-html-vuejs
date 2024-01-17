@@ -205,14 +205,15 @@ export default {
 
 
     .next-button, .prev-button{
-        background-color: $grigio;
-        opacity: 0.4;
+        background-color: #01010126;
         color: $bianco;
-        padding: 10px;
-        width: 40px;
+        padding: 20px;
+        width: 70px;
         text-align: center;
         display: inline-block;
         border-radius: 50%;
+        font-size: 25px;
+        color: $bianco;
     }
 
     .next-button{

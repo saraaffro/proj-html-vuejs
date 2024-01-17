@@ -57,7 +57,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7 p-0">
                 <div class="member">
                     <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-gallery-image-06.jpg" alt="img member">
                     <div class="member-info">
