@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div class="benefit">
+    <div class="benefit container-xl">
       <div class="title mt-4">
         <span>MAXCOACH AVAILABLE COURSES</span>
         <h2 class="mt-4">Access <span class="color-smart">Smart Tutoring</span> Program For Benefits.</h2>

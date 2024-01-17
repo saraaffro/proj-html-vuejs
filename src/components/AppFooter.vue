@@ -7,8 +7,9 @@ export default{
 
 <template>
     <footer>
-        <div id="bg" class="container-xl container-fluid-lg">
-            <div class="flex">
+        <div id="bg" class="container-fluid-lg">
+            <div class="container-xl">
+                <div class="flex">
                 <div id="lista1">
                     <h4>Address</h4>
                     <ul>
@@ -57,6 +58,8 @@ export default{
             <div id="center">
                 <span>© 2020 Maxcoach. All Rights Reserved</span>
             </div>
+            </div>
+           
         </div>
     </footer>
    
@@ -67,7 +70,7 @@ export default{
 
     #bg{
         background-color: $bianco-sporco;
-        padding: 4% 10% 4% 1.5%;
+        padding: 4% 1.5% 4% 0;
         display: flex;
         flex-direction: column;
     }

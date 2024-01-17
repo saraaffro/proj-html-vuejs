@@ -80,7 +80,7 @@ export default {
 </script>
 
 <template>
-        <div class="slider-show">
+        <div class="slider-show ">
             <div class="thumb" :class="{'active' : slide.isActive}" v-for="(slide, index) in slider" :key="index">
                 <img :src="slide.image" alt="slide">
 
@@ -101,9 +101,9 @@ export default {
                 <div class="prev-button" @click="prevSlide"><i class="fas fa-chevron-left"></i></div>
             </div>
         </div>
-    <div class="container-xl container-fluid-lg">
+    <!-- <div class="container-xl container-fluid-lg">
         
-    </div>
+    </div> -->
 </template>
 
 <style lang="scss" scoped>
