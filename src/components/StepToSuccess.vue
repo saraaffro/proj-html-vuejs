@@ -224,7 +224,7 @@ section{
         @media all and (min-width: 1400px){
             position: absolute;
             left: 48%;
-            top: 1330px;
+            top: 1355px;
             transform: translate(-48%, 0);
         }
     }
@@ -264,7 +264,7 @@ section{
         @media all and (min-width: 1400px){
             position: absolute;
             left: 48%;
-            top: 1855px;
+            top: 1885px;
             transform: translate(-48%, 0);
         }
     }
