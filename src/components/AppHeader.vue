@@ -92,10 +92,10 @@ header{
     margin: 0 10px;
     color: black;
     font-weight: 200;
+    transition: color 0.3s ease-in-out;
 
         &:hover{
             color: $verde-acqua;
-            text-decoration: underline;
         }
     }
 
@@ -103,6 +103,7 @@ header{
         color: black;
         margin-left: 10px;
         font-size: 18px;
+        transition: color 0.3s ease-in-out;
 
         &:hover{
             color: $verde-acqua;
