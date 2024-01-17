@@ -10,7 +10,7 @@ export default {
         <h2>Best chances for expanding your success to the max</h2>
 
         <div class="line-center"></div>
-        <i class="fa-regular fa-circle-dot"></i>
+        <i class="fa-regular fa-circle-dot one"></i>
         <h3>BROADENING</h3>
         <div class="step d-md-flex align-items-center">
             <div class="img-container">
@@ -22,6 +22,7 @@ export default {
             </div>
         </div>
 
+        <i class="fa-regular fa-circle-dot two"></i>
         <h3 class="reverse">SCHEDULING</h3>
         <div class="step reverse d-md-flex flex-md-row-reverse align-items-center">
             <div class="img-container reverse">
@@ -33,6 +34,7 @@ export default {
             </div>
         </div>
 
+        <i class="fa-regular fa-circle-dot three"></i>
         <h3 id="discipline">SELF-DISCIPLINE</h3>
         <div class="step d-md-flex align-items-center">
             <div class="img-container">
@@ -44,6 +46,7 @@ export default {
             </div>
         </div>
 
+        <i class="fa-regular fa-circle-dot four"></i>
         <h3 class="reverse">INVESTMENT</h3>
         <div class="step reverse d-md-flex flex-md-row-reverse align-items-center">
             <div class="img-container reverse">
@@ -67,6 +70,7 @@ section{
     padding-top: 30px;
     position: relative;
     overflow-y: hidden;
+    overflow-x: hidden;
 
     .line-center{
         width: 2px;
@@ -105,7 +109,7 @@ section{
         }
     }
 
-    .fa-circle-dot{
+    .fa-circle-dot.one{
         font-size: 30px;
         color: $verde-acqua;
         position: absolute;
@@ -141,6 +145,126 @@ section{
             position: absolute;
             left: 48%;
             top: 250px;
+            transform: translate(-48%, 0);
+        }
+    }
+
+    .fa-circle-dot.two{
+        font-size: 30px;
+        color: $verde-acqua;
+        position: absolute;
+        top: 730px;
+        left: 16px;
+
+        @media all and (min-width: 500px){
+            top: 940px;
+        }
+
+        @media all and (min-width: 768px){
+            position: absolute;
+            left: 49%;
+            top: 615px;
+            transform: translate(-49%, 0);
+        }
+
+        @media all and (min-width: 992px){
+            position: absolute;
+            left: 45%;
+            top: 680px;
+            transform: translate(-45%, 0);
+        }
+
+        @media all and (min-width: 1200px){
+            position: absolute;
+            left: 44%;
+            top: 680px;
+            transform: translate(-44%, 0);
+        }
+
+        @media all and (min-width: 1400px){
+            position: absolute;
+            left: 48%;
+            top: 780px;
+            transform: translate(-48%, 0);
+        }
+    }
+
+    .fa-circle-dot.three{
+        font-size: 30px;
+        color: $verde-acqua;
+        position: absolute;
+        top: 1030px;
+        left: 16px;
+
+        @media all and (min-width: 500px){
+            top: 1660px;
+        }
+
+        @media all and (min-width: 768px){
+            position: absolute;
+            left: 49%;
+            top: 1220px;
+            transform: translate(-49%, 0);
+        }
+
+        @media all and (min-width: 992px){
+            position: absolute;
+            left: 45%;
+            top: 1145px;
+            transform: translate(-45%, 0);
+        }
+
+        @media all and (min-width: 1200px){
+            position: absolute;
+            left: 44%;
+            top: 1185px;
+            transform: translate(-44%, 0);
+        }
+
+        @media all and (min-width: 1400px){
+            position: absolute;
+            left: 48%;
+            top: 1330px;
+            transform: translate(-48%, 0);
+        }
+    }
+
+    .fa-circle-dot.four{
+        font-size: 30px;
+        color: $verde-acqua;
+        position: absolute;
+        top: 2380px;
+        left: 16px;
+
+        @media all and (min-width: 500px){
+            top: 2380px;
+        }
+
+        @media all and (min-width: 768px){
+            position: absolute;
+            left: 49%;
+            top: 1645px;
+            transform: translate(-49%, 0);
+        }
+
+        @media all and (min-width: 992px){
+            position: absolute;
+            left: 45%;
+            top: 1580px;
+            transform: translate(-45%, 0);
+        }
+
+        @media all and (min-width: 1200px){
+            position: absolute;
+            left: 44%;
+            top: 1615px;
+            transform: translate(-44%, 0);
+        }
+
+        @media all and (min-width: 1400px){
+            position: absolute;
+            left: 48%;
+            top: 1855px;
             transform: translate(-48%, 0);
         }
     }
@@ -201,17 +325,19 @@ section{
     h3.reverse{
         @media all and (min-width: 769px){
             position: relative;
-            left: 250px;
+            left: 460px;
+            margin-bottom: 30px;
         }
 
         @media all and (min-width: 992px){
             position: relative;
-            left: 280px;
+            left: 510px;
+            margin-bottom: 30px;
         }
 
         @media all and (min-width: 1400px){
             position: relative;
-            left: 330px;
+            left: 650px;
         }
     }
 
