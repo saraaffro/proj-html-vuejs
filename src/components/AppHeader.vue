@@ -44,7 +44,7 @@ export default{
 
                 <!-- dropdown searchbar -->
                 <button class="hamb-menu d-md-none" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-ellipsis-h"></i></button>
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <div class="collapse navbar-collapse ms_collapse" id="navbarNavDarkDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <div class="my_dropdown">
@@ -73,12 +73,14 @@ export default{
 
 header{
     height: 80px;
+    position: relative;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 500;
     padding: 20px 0;
     background-color: $bianco;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 
     .logo-container{
         width: 150px;
@@ -143,13 +145,24 @@ header{
 
     .hamb-menu{
        padding-left: 20px;
-       font-size: 20px;
+       font-size: 25px;
        background-color: $bianco;
        border: none;
+       transition: color 0.3s ease-in-out;
 
        &:hover{
         color: $verde-acqua;
        }
+    }
+
+    .ms_collapse{
+        position: absolute;
+        right: 1%;
+        top: 80px;
+        background-color: white;
+        width: 98%;
+        text-align: end;
+        padding: 10px 0;
     }
 
     .my_offcanvas{

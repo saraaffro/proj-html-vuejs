@@ -76,7 +76,7 @@ export default {
 <template>
     
     <div class="container_cards">
-        <div id="card" v-if="circles[0].active" v-for="(card,i) in firstThree" :key="i">
+        <div id="card" v-if="circles[0].active" v-for="(card,i) in firstThree" :key="i" >
             <img :src="card.src" alt="card">
             <div>
                 <h4>{{ card.price }}</h4>
@@ -103,7 +103,7 @@ export default {
         <div
         v-for="(circle, index) in circles"
         :key="index"
-        :class="{ 'circle': true, 'circle_active': circle.active }"
+        :class="{ 'circle': true, 'circle_active': circle.active}"
         @click="toggleCircle(index)"
         ></div>
     </div>
@@ -118,8 +118,6 @@ export default {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        transition-duration: 1000ms;
-        transform: translate3d(0px, 0px, 0px);
     }
 
     #card{
@@ -182,6 +180,7 @@ export default {
         border-radius: 50%;
         cursor: pointer;
         margin-right: 10px;
+        transition: 0.3s;
 
         &:hover{  
             background-color: black;
