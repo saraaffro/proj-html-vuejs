@@ -27,6 +27,8 @@ export default{
                     </div>
                 </div>
             </div>
+
+            <!-- CARD 1 MOST VIEWED -->
             <div class="col-12 col-lg-4">
                 <div class="card">
                     <div class="image-container">
@@ -42,6 +44,8 @@ export default{
                     </div>
                 </div>
             </div>
+
+            <!-- CARD 2 MOST VIEWED -->
             <div class="col-12 col-lg-4">
                 <div class="card">
                     <div class="image-container">
@@ -91,6 +95,8 @@ export default{
         }
     }
 
+
+    // ANIMAZIONE ARROW
     .blogs{
         color: #3F3A64;
 
@@ -123,6 +129,7 @@ export default{
         transform: translateX(5px);
     }
 
+    // ALL' HOVER DELLA CARD
     .card {
     width: 350px;
     height: 450px;

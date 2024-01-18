@@ -73,6 +73,8 @@ data(){
                     </div>
                 </div>
 
+
+                <!-- CARD GENERATE NEL COMPONENTE PriceCard -->
                 <div class="row">
                     <div class="col-12 col-lg-6 d-flex justify-content-center" v-for="card in rates" :key="card">
                         <CardPrice :card="card"/>
@@ -106,6 +108,8 @@ data(){
             }
         }
 
+
+        // ALL'HOVER DEL BOTTONE
         button{
             background-color: $verde-acqua;
             border: none;

@@ -18,6 +18,7 @@ components:{
             <h2 class="big-title">Our <span class="top">top learners'</span> verbatim</h2>
         </div>
     
+        <!-- SLIDER CREATO IN TeamHomeSlider -->
         <TeamHomeSlider/>
 
         <div class="sub-title text-center">

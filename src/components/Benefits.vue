@@ -5,6 +5,8 @@
     }
 </script>
 
+
+<!-- colonne Benefit -->
 <template>
     <div class="benefit container-xl">
       <div class="title mt-4">
@@ -12,6 +14,7 @@
         <h2 class="mt-4">Access <span class="color-smart">Smart Tutoring</span> Program For Benefits.</h2>
       </div>
 
+      <!-- COL  1-->
       <div class="container-benefit">
         <div class="row">
         <div class="col-12 col-md-4">
@@ -23,7 +26,7 @@
           </div>
         </div>
   
-      
+      <!-- COL 2 -->
         <div class="col-12 col-md-4">
           <div class="course-card">
             <img src="/public/about-us-02-image-box-02.png" alt="image box 2">
@@ -33,7 +36,7 @@
           </div>
         </div>
   
-    
+        <!-- COL 3 -->
         <div class="col-12 col-md-4">
           <div class="course-card">
             <img src="/public/home-2-image-box-03.png" alt="image box 3">
@@ -54,6 +57,7 @@
 .container-benefit {
   margin: 100px 0;
 
+  // ANIMAZIONE CARD
   .course-card {
     padding: 20px;
     cursor: pointer;
@@ -84,6 +88,8 @@
       margin-top: 1rem;
     }
 
+
+    // ANIMAZIONE UNDERLINE
     a {
       color: $grigio;
       position: relative;

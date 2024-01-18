@@ -52,6 +52,8 @@
     overflow: hidden;
     border-bottom-right-radius: 10px; 
 }
+
+// ANIMAZIONE INGRANDIMENTO IMG
 .image {
     position: relative;
 

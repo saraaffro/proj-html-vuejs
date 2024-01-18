@@ -111,7 +111,7 @@ export default {
         border-radius: 50%;
     }
 
-    // BOTTONE
+    // ANIMAZIONE BOTTONE
     .download{
         background-color: $verde-acqua;
         border: none;
@@ -135,6 +135,8 @@ export default {
     position: relative;
 
     .color-free {
+
+        // ANIMAZIONE UNDERLINE
 
         a {
             color: $verde-acqua;
