@@ -75,7 +75,7 @@ export default {
                 <tbody>
                     <tr>
                         <td colspan="4"><h4>Change simplification</h4>
-                        <span>General introduction to customer-centric strategies</span></td>
+                        <span class="title" >General introduction to customer-centric strategies</span></td>
                     </tr>    
         
                     <tr>
@@ -214,7 +214,7 @@ export default {
                 <tbody>
                     <tr>
                         <td colspan="4"><h4>Customer Advisory Board</h4>
-                        <span>Learn about the basics of Customer Advisory Board</span></td>
+                        <span class="title">Learn about the basics of Customer Advisory Board</span></td>
                     </tr>    
         
                     <tr>
@@ -336,7 +336,7 @@ export default {
                 <tbody>
                     <tr>
                         <td colspan="4"><h4>Customer Behavior Case Studies</h4>
-                        <span>In this section, learners will have a chance to discuss thoroughly the role of customer behaviors in business.</span></td>
+                        <span class="title">In this section, learners will have a chance to discuss thoroughly the role of customer behaviors in business.</span></td>
                     </tr>    
         
                     <tr>
@@ -402,10 +402,13 @@ export default {
         <!-- visualizzazione testo correlato all'elemento tramite condizione : Instructor -->
         <div class="container_page" v-if="activeIndex === 2">
             <div id="container_instructor" class="flex">
-                <img src="/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="img">
+               
+                <img src="https://secure.gravatar.com/avatar/d0d504142acfde820eef2f11feea6253?s=400&d=mm&r=g" alt="img">
+                
+                
                 <div>
                     <h3>Maggie Strickland</h3>
-                    <span>/Advanced Educator</span>
+                    <span class="advanced">/Advanced Educator</span>
                     <p>Maggie is a brilliant educator, whose life was spent for computer science and love of nature. Being a female, she encountered a lot of obstacles and was forbidden to work in this field by her family. With a true spirit and talented gift, she was able to succeed and set an example for others.</p>
 
                     <span>
@@ -570,6 +573,17 @@ export default {
         padding: 15px;
     }
 
+    .advanced{
+        font-size: 14px;
+        color: #7e7e7e;
+        margin: 10px 0 0;
+    }
+
+    .title{
+        font-size: 14px;
+        font-style: italic;
+    }
+
     #slash{
         margin: 0 10px;
     }
@@ -679,8 +693,8 @@ export default {
         }
 
         .minutes{
-            color: rgb(255, 145, 0);
-            background-color: rgb(255, 218, 171);   
+            color: rgb(206, 125, 20);
+            background-color: #f4ebe7;   
         }
         .preview{
             color: white;
@@ -689,8 +703,8 @@ export default {
         }
 
         .questions{
-            color: rgb(0, 145, 145);
-            background-color: rgb(184, 251, 251);
+            color: rgb(32, 179, 179);
+            background-color: rgb(203, 236, 236);
         }
         
     }
