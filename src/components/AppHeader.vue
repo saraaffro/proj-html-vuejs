@@ -94,10 +94,29 @@ header{
     margin: 0 10px;
     color: black;
     font-weight: 200;
+    position: relative;
+    display: inline-block;
     transition: color 0.3s ease-in-out;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.5px;
+        background-color: $verde-acqua;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out;
+      }
 
         &:hover{
             color: $verde-acqua;
+        }
+
+        &:hover::before{
+            transform: scaleX(1);
         }
     }
 
@@ -121,11 +140,12 @@ header{
         color: #b4b4b4;
         font-weight: 200;
         width: 170px;
+        outline: none;
 
         // non cambia colore al focus
         &:focus{
-            border: 1px solid $verde-acqua;
             background-color: $bianco;
+            border: 1px solid $verde-acqua;
         }
     }
 
@@ -140,6 +160,11 @@ header{
         &:hover{
             background-color: $verde-acqua;
             color: $bianco;
+        }
+
+        input:focus .search{
+            background-color: $bianco;
+            border: 1px solid $verde-acqua;
         }
     }
 

@@ -10,7 +10,6 @@ export default {
                     id: 1,
                     title: 'Inspiring Curriculum',
                     text:'Learning with MaxCoach might a turning point in your life when you get communication with a great awakening of born talents.',
-                    isActive: true
                 },
                 {
                     image: 'https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-hero-slide-02-bg.jpg',
@@ -18,7 +17,6 @@ export default {
                     id: 2,
                     title: 'Life Consultancy',
                     text:'Ever feel drained of ideas and inspiratioin in life? Lost in no where and have no place to go? Find help and advice from MaxCoach specialists.',
-                    isActive: false,
                 },
                 {
                     image: 'https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/02/start-here-hero-slide-03-bg.jpg',
@@ -26,51 +24,34 @@ export default {
                     id: 3,
                     title: 'Skill Advancement',
                     text:"Not only your skills are advanced, your inner self can get a new identity as well. You're the one who take the full control of your life book.",
-                    isActive: false,
                 },
             ],
             activeElement: 0,
+            timer: null,
         }
     },
     methods:{
-        addClass(classname) {
-            this.slider[this.activeElement].isActive = true;
-        },
-        removeClass(classname) {
-            this.slider[this.activeElement].isActive = false;
-        },
         nextSlide() {
-            // Rimuovo la classe "active" dalla slide attualmente attiva
-            this.slider[this.activeElement].isActive = false;
-
-            // Incremento l'indice per passare alla slide successiva
-            this.activeElement = (this.activeElement + 1) % this.slider.length;
-
-            // Aggiungo la classe "active" alla nuova slide attiva
-            this.slider[this.activeElement].isActive = true;
+            this.activeElement++;
+            if(this.activeElement > this.slider.length - 1){
+                this.activeElement = 0;
+            }
         },
         prevSlide(){
-            // Rimuovo la classe "active" dalla slide attualmente attiva
-            this.slider[this.activeElement].isActive = false;
-
-            // Decremento l'indice per passare alla slide successiva (% per assicurarsi che non vada al di fuori della lunghezza dell'array)
-            this.activeElement = (this.activeElement - 1 + this.slider.length) % this.slider.length;
-
-            // Aggiungo la classe "active" alla nuova slide attiva
-            this.slider[this.activeElement].isActive = true;
+            if(this.activeElement === 0){
+                this.activeElement = this.slider.length - 1;
+            }else{
+                this.activeElement--;
+            }
         },
         startTimer() {
-            setInterval(() => {
-                if (this.activeElement < this.slider.length - 1) {
-                    this.removeClass("active");
-                    this.activeElement++;
-                    this.addClass("active");
-                } else {
-                    this.removeClass("active");
-                    this.activeElement = 0;
-                    this.addClass("active");
-                }
-            }, 4000);
+            this.timer = setInterval(() => {
+                this.nextSlide();
+            }, 3000)
+        },
+        stopTimer(){
+            clearInterval(this.timer);
+            this.timer = null;
         }
     },
     mounted(){
@@ -80,8 +61,8 @@ export default {
 </script>
 
 <template>
-        <div class="slider-show">
-            <div class="thumb" :class="{'active' : slide.isActive}" v-for="(slide, index) in slider" :key="index">
+        <div class="slider-show" @mouseover="stopTimer" @mouseout="startTimer">
+            <div v-for="(slide, index) in slider" :key="index" class="thumb" :class="activeElement === index ? 'active' : ''">
                 <img :src="slide.image" alt="slide">
 
                 <div class="slide-info d-lg-flex align-items-center justify-content-center">
@@ -221,6 +202,10 @@ export default {
         top: 50%;
         right: 0;
         transform: translate(-50%, 0);
+
+        &:hover{
+            background-image: url('');
+        }
     }
 
     .prev-button{

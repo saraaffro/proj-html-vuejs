@@ -50,7 +50,7 @@ export default {
         <h4>SUCCEED WITH <strong>MAXCOACH</strong></h4>
         <h2>Frequently asked questions</h2>
 
-       <div class="container-xl container-fluid-lg row ms-1">
+       <div class="container-xl container-fluid-lg row ms_faq">
             <div v-for="(faq, index) in faqList" :key="index" class="faq-item col-12 col-md-6">
                 <div class="question" :class="faq.expanded ? 'active' : ''" @click="showAnswer(index)">
                     {{ faq.question }}
@@ -69,6 +69,10 @@ export default {
 
 section{
     padding: 60px 0;
+
+    .ms_faq{
+        margin: 0 auto;
+    }
 
     h4{
         color: $blu-scuro;
@@ -105,7 +109,7 @@ section{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transition: background-color 0.5s ease-in;
+        transition: all 0.5s ease-in;
 
         &:hover{
             background-color: $verde-acqua;
