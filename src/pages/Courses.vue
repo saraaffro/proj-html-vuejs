@@ -433,7 +433,7 @@ export default {
                     <span>Average Rating</span>
                     <!-- container white -->
                     <div id="bg_white">
-                        <span class="number fs-1">4.50</span>
+                        <span class="number fs-1 fw-bold">4.50</span>
                         <div class="container_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -581,7 +581,8 @@ export default {
 
     span.number{
         font-size: 70px;
-        font-weight: 500;
+        font-weight: bold;
+        color: $verde-acqua;
     }
    
 
