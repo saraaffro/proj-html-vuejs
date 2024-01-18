@@ -80,4 +80,13 @@
         padding-top: 50px;
     }
 
+    @media (max-width: 568px) {
+    
+        input{
+            width: 200px;
+        }
+   
+    }
+
+
 </style>
