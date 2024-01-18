@@ -426,24 +426,24 @@ export default {
             <!-- visualizzazione testo correlato all'elemento tramite condizione : reviews -->
             <div class="container_page" v-if="activeIndex === 3">
 
-                <h3>Reviews</h3>
-                <!-- container_ratings -->
-                <div id="container_ratings" class="flex">
-                    <div id="av_rating">
-                        <span>Average Rating</span>
-                        <!-- container white -->
-                        <div id="bg_white">
-                            <h1>4.50</h1>
-                            <div class="container_stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+            <h3>Reviews</h3>
+            <!-- container_ratings -->
+            <div id="container_ratings" class="flex">
+                <div id="av_rating">
+                    <span>Average Rating</span>
+                    <!-- container white -->
+                    <div id="bg_white">
+                        <span class="number fs-1">4.50</span>
+                        <div class="container_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i><br>
                             <span>(2 ratings)</span>
                         </div>
                     </div>
+                </div>
 
                     <!-- container table ratings -->
                     <div id="dt_rating">
@@ -576,6 +576,14 @@ export default {
 
 <style lang="scss" scoped>
     @use '../styles/partial/variables' as *;
+
+
+
+    span.number{
+        font-size: 70px;
+        font-weight: 500;
+    }
+   
 
     #bg{
         background-color: #fff;
