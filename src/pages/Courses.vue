@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-    <div id="bg" class="container-xl container-fluid-lg">
+    <div id="bg" class="container-xl container-fluid-lg g-0">
         <a href="/">Home</a>
         <span id="slash">/</span>
         <a href="/course">Courses</a>
@@ -510,8 +510,11 @@ export default {
             </div>
 
             <!-- container reviews -->
-            <div id="container_reviews1" class="flex container_reviews">
-                <img src="/ednawatsonimg.jpeg" alt="img">
+            <div class="flex container_reviews">
+                <div class="img-container-reviews">
+                    <img src="/ednawatsonimg.jpeg" alt="img">
+                </div>
+                
                 
                 <div>
                     <div class="flex">
@@ -532,10 +535,13 @@ export default {
             <hr>
 
             <div class="flex container_reviews">
-                <img src="/owenchristimg.jpg" alt="img">
                 
+                <div class="img-container-reviews">
+                    <img class="img-review" src="/owenchristimg.jpg" alt="img">
+                </div>
+               
                 <div>
-                    <div class="flex">
+                    <div class="flex second-review">
                         <h5>OWEN CHRIST</h5>
                         <div>
                             <i class="fa-solid fa-star"></i>
@@ -576,7 +582,7 @@ export default {
     
     a{
         color: $grigio;
-        
+        font-weight: 200;
 
         &:hover{
             text-decoration: underline;
@@ -585,7 +591,9 @@ export default {
 
     h1{
         text-align: center;
-        margin: 5% 0;
+        margin: 70px 0;
+        font-size: 50px;
+        font-weight: 600;
     }
 
     #relatedcourses{
@@ -596,21 +604,24 @@ export default {
     }
 
     #container_list{
-        width: 45.5%;
+        width: 100%;
     }
 
     ul{
-        margin-left: -21px;
+        margin-left: -25px;
+        
     
         li{
             display: inline-block;
-            font-size: 23px;
+            font-size: 20px;
             cursor: pointer;
-            color: $grigio;
+            color: #c6c6c6;
             font-weight: bold;
+            border-bottom: 2px solid #eeeeee;
+           
 
             &:not(:last-of-type){
-                margin-right: 20px;
+                padding: 0 30px;
             }
 
             &:hover{
@@ -627,14 +638,21 @@ export default {
         width: 75%;
 
         h2{
-            margin-bottom: 20px;
+            margin: 50px 0 20px 0;
+            font-weight: 600;
+        }
+
+        p{
+            font-weight: 200;
+            color: $grigio;
+            font-size: 15px;
         }
 
         #container_artist{
             width: 80%;
             position: relative;
             cursor: pointer;
-            margin: 30px 0;
+            margin: 50px 0;
         }
 
         #artist{
@@ -644,9 +662,10 @@ export default {
 
         #icon_play{
             position: absolute;
-            width: 15%;
-            top: 40%;
-            left: 42%;
+            width: 80px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -731,6 +750,8 @@ export default {
 
     h3{
         margin: 40px 0;
+        font-size: 25px;
+        font-weight: 600;
     }
 
     .fa-star{
@@ -742,7 +763,12 @@ export default {
         margin-bottom: 50px;
 
         #av_rating{
-            margin-right: 6%;
+            margin-right: 60px;
+
+            span{
+                font-weight: 200;
+                font-size: 15px;
+            }
 
             #bg_white{
                 background-color: white;
@@ -759,6 +785,11 @@ export default {
         }
 
         #dt_rating{
+
+            span{
+                font-weight: 200;
+                font-size: 15px;
+            }
 
             table{
                 border: none;
@@ -804,23 +835,41 @@ export default {
     .container_reviews{ 
         width: 90%;
 
-            img{
-                width: 15%;
-                height: 15%;
-                border-radius: 50%;
-                margin-right: 50px;
+        .img-container-reviews{
+            width: 250px;
+            margin-left: 20px;
+
+            .img-review{
+                width: 130%;
             }
+            
+            img{
+                width: 100%;
+                border-radius: 50%;   
+            }
+        }
 
             .flex{
                 justify-content: space-between;
             }
 
             h6{
-                margin: 10px 0;
+                margin: 10px 50px;
+                font-size: 15px;
+                font-weight: 600;
             }
-       }
 
-       #container_reviews1{
+            h5{
+                margin-left: 50px;
+                font-size: 20px;
+            }
+
+            p{
+                margin-left: 50px;
+            } 
+    }
+
+       #container_reviews{
             .flex{
                 .fa-star:last-child{
                     color: rgb(222, 222, 222);
@@ -830,6 +879,7 @@ export default {
 
        hr{
         margin-bottom: 40px;
+        color: #c6c6c6;
        }
 
 </style>
