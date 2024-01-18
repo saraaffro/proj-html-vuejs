@@ -56,6 +56,7 @@ export default {
 
                     <!-- sliude image start -->
                     <!-- SLIDER GENERATO TRAMITE DATA -->
+                    <!-- classe slide sempre presente mentre first solo nel primo indice -->
                     <div v-for="(slide, index) in slides" :key="index" :class="{ 'slide': true, 'first': index === 0 }">
                         <h4>{{ slide.content }}</h4>
                         <p>{{ slide.text }}</p>

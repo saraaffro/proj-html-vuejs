@@ -119,7 +119,7 @@ mounted(){
         border-left: 1px solid rgb(235, 227, 227);
     }
 
-    @media (max-width: 966px) {
+    @media all and (max-width: 966px) {
     
         .count {
             border-bottom: 1px solid rgb(235, 227, 227);
