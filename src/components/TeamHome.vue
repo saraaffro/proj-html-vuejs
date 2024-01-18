@@ -37,7 +37,7 @@ components:{
 @import '../styles/partial/variables';
 
 .bg{
-    background-color: #f5f1ed;
+    background-color: #f8f8f8;
 }
 
 .title{
