@@ -52,7 +52,7 @@
     overflow: hidden;
     border-bottom-right-radius: 10px; 
     padding-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 // ANIMAZIONE INGRANDIMENTO IMG
