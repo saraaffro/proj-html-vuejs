@@ -82,9 +82,6 @@ export default {
                 <div class="prev-button" @click="prevSlide"><i class="fas fa-chevron-left"></i></div>
             </div>
         </div>
-    <!-- <div class="container-xl container-fluid-lg">
-        
-    </div> -->
 </template>
 
 <style lang="scss" scoped>
@@ -202,10 +199,6 @@ export default {
         top: 50%;
         right: 0;
         transform: translate(-50%, 0);
-
-        &:hover{
-            background-image: url('');
-        }
     }
 
     .prev-button{
@@ -219,8 +212,4 @@ export default {
 .active{
     display: block;
 }
-
-
-
-
 </style>
