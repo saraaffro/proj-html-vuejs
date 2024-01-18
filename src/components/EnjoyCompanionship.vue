@@ -77,14 +77,18 @@ mounted(){
 
 
 .bg {
-    background: linear-gradient(330deg, transparent 182px, #fff 20px), #f5f1ed;
+    background: linear-gradient(330deg, transparent 182px, #fff 20px), #f8f8f8;
     overflow: hidden;
     border-bottom-right-radius: 10px; 
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 // ANIMAZIONE INGRANDIMENTO IMG
 .image {
     position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0px 130px 50px -100px rgba(51, 51, 51, 0.22);
 
     .avatar-container {
         overflow: hidden;

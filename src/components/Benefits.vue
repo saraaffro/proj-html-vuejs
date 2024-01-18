@@ -86,6 +86,9 @@ mounted(){
 <style lang="scss" scoped>
 @use '../styles/partial/variables' as *;
 
+.benefit{
+  margin-top: 100px;
+}
 .container-benefit {
   margin: 100px 0;
 
