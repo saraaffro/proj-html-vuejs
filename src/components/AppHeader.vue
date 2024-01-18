@@ -142,7 +142,6 @@ header{
         width: 170px;
         outline: none;
 
-        // non cambia colore al focus
         &:focus{
             background-color: $bianco;
             border: 1px solid $verde-acqua;

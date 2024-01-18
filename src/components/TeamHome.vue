@@ -22,7 +22,7 @@ components:{
         <TeamHomeSlider/>
 
         <div class="sub-title text-center">
-            <h3 class="big-title">Start today for getting <span class="top">Online Certification</span> </h3>
+            <h3 class="sub-title sm">Start today for getting <span class="top">Online Certification</span> </h3>
             <h2>You can be your own guiding star with our help!</h2>
         </div>
 
@@ -38,7 +38,7 @@ components:{
 @import '../styles/partial/variables';
 
 .bg{
-    background-color: #f5f7fa;
+    background-color: #f5f1ed;
 }
 
 .title{
@@ -60,21 +60,28 @@ h2{
 }
 
 .top{
-        color: $verde-acqua;
-        font-weight: 400;
+    color: $verde-acqua;
+    font-weight: 200;
     }
 
 .big-title{
-    font-size: 24px;
+    font-size: 35px;
     color: #3F3A64;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.sub-title{
-    padding-bottom: 50px;
-    h2{
-        font-size: 34px;
-        color: #3F3A64; 
-    }
+.sub-title.sm{
+    font-size: 25px;
+    color: $blu-scuro;
+    padding-bottom: 0px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.sub-title h2{
+    font-size: 35px;
+    font-weight: 600;
 }
 
 .btn{
@@ -83,8 +90,11 @@ h2{
     padding: 15px 30px;
     border-radius: 5px;
     color: white;
-    margin: 20px 0;
+    margin-bottom: 70px;
     transition: background-color 0.5s ease-in-out;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 500;
 
     &:hover {
         background-color: $blu-scuro; 

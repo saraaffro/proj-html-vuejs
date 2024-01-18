@@ -95,7 +95,7 @@ export default {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    margin: 150px auto;
+    margin: 50px auto;
     background-color: white;
     border-radius: 15px;
     

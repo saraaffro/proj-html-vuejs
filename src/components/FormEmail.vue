@@ -11,7 +11,7 @@
  <div class="container-fluid space">
     <div class="container">
         <div class="title text-center py-4">
-            <strong class="subscribe">Subscribe<span class="newsletter"> Newsletters</span></strong>
+            <strong class="subscribe">Subscribe</strong><span class="newsletter"> Newsletters</span>
         </div>
         <p class="text-center">Enter your email address to register to our newsletter subscription
         delivered on a regular basis!</p>
@@ -27,23 +27,28 @@
 @import '../styles/partial/variables';
 
     .space{
-        padding: 100px 0;
+        padding: 60px 0 100px 0;
     }
 
     .subscribe{
         font-size: 34px;
         line-height: 1.42em;
         color: #3F3A64;
-
-        .newsletter{
-            color: $verde-acqua;
-        }
-
+        font-weight: 600;
     }
 
+    .newsletter{
+            color: $verde-acqua;
+            font-size: 34px;
+            font-weight: 200;
+        }
+
     p{
-        color: rgb(180, 168, 168);
-        font-weight: 400;
+        color: $grigio;
+        font-weight: 300;
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
     }
 
     input{
@@ -55,6 +60,8 @@
         color: #b4b4b4;
         font-weight: 200;
         width: 400px;
+        height: 50px;
+        outline: none;
 
         // non cambia colore al focus
         &:focus{
@@ -66,11 +73,14 @@
     button{ 
         border: none;
         background-color: $verde-acqua;
-        padding: 10px;
+        padding: 14px;
         border-radius: 0 5px 5px 0; 
         color: $bianco;
-        width: 90px;
+        width: 100px;
         transition: 0.5s ease-in-out;
+        font-size: 13px;
+        height: 50px;
+        font-weight: 500;
 
         &:hover{
             background-color: $blu-scuro;

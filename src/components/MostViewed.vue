@@ -76,11 +76,12 @@ export default{
 
     h6{
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 300;
         text-transform: uppercase;
         line-height: 2em;
         letter-spacing: 2px;
         color: #8C89A2;
+        padding-top: 100px;
     }
 
     h3{
@@ -88,10 +89,11 @@ export default{
         line-height: 1.42em;
         color: #3F3A64;
         padding-bottom: 20px;
+        font-weight: 600;
 
         .best{
             color: $verde-acqua;
-            font-weight: 400;
+            font-weight: 200;
         }
     }
 
@@ -99,6 +101,7 @@ export default{
     // ANIMAZIONE ARROW
     .blogs{
         color: #3F3A64;
+        padding-bottom: 100px;
 
         p{
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -136,19 +139,26 @@ export default{
     border: none;
     border-radius: 0;
     overflow: hidden;
-    margin-top: 20px;
     box-shadow: 0px 18px 65px -42px;
     cursor: pointer;
+    margin-top: 95px;
+
+    h6{
+        padding-top: 0;
+    }
 
     .text-card {
         color: #3F3A64;
         font-weight: 700;
         transition: 1s ease-in-out;
+        font-size: 20px;
     }
 
     span {
         padding-right: 10px;
         color: rgb(146, 140, 140);
+        font-weight: 200;
+        font-size: 13px;
     }
 
     i {
@@ -168,8 +178,6 @@ export default{
     }
 
     .image-container {
-        overflow: hidden;
-
         .card-image {
             width: 100%;
             transition: transform 0.8s ease-in-out;
