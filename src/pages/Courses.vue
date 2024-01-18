@@ -367,7 +367,7 @@ export default {
 
         <!-- visualizzazione testo correlato all'elemento tramite condizione : Instructor -->
         <div class="container_page" v-if="activeIndex === 2">
-            <div class="flex">
+            <div id="container_instructor" class="flex">
                 <img src="/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="img">
                 <div>
                     <h3>Maggie Strickland</h3>
@@ -385,8 +385,94 @@ export default {
             </div>
         </div>
 
+        <!-- visualizzazione testo correlato all'elemento tramite condizione : reviews -->
         <div class="container_page" v-if="activeIndex === 3">
             <p>Contenuto per {{ items[activeIndex] }}</p>
+
+            <h2>Reviews</h2>
+
+            <div id="container_ratings" class="flex">
+                <div id="av_rating">
+                    <span>Average Rating</span>
+                    <div id="bg_white">
+                        <h1>4.50</h1>
+                        <div class="container_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>(2 ratings)</span>
+                    </div>
+                </div>
+
+                <div id="dt_rating">
+                    <span>Detailed Rating</span>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </td>
+                            <td><div class="line line_green"></div></td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </td>
+                            <td><div class="line line_green"></div></td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </td>
+                            <td><div class="line"></div></td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </td>
+                            <td><div class="line"></div></td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </td>
+                            <td><div class="line"></div></td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
         
         <div id="relatedcourses">
@@ -535,6 +621,9 @@ export default {
 
     .flex{
         display: flex;
+    }
+
+    #container_instructor{
         margin-top: 50px;
         margin-bottom: 250px;
 
@@ -553,15 +642,79 @@ export default {
         }
 
         .fa-brands{
-        font-size: 20px;
-        margin-right: 6%;
-        margin-top: 20px;
-        color:rgb(184, 184, 184);
-        
-        &:hover{
-            color: $verde-acqua;
+            font-size: 20px;
+            margin-right: 6%;
+            margin-top: 20px;
+            color:rgb(184, 184, 184);
+            
+            &:hover{
+                color: $verde-acqua;
+            }
         }
     }
+
+    #container_ratings{
+        flex-wrap: wrap;
+
+        #av_rating{
+            margin-right: 6%;
+
+            #bg_white{
+                background-color: white;
+                padding: 30px 40px;
+                margin-top: 20px;
+                text-align: center;
+
+                h1{
+                    font-size: 70px;
+                    color: $verde-acqua;
+                }
+
+            }
+        }
+        .fa-star{
+                    color: rgb(255, 200, 0);
+                }
+
+        #dt_rating{
+
+            table{
+                border: none;
+                color: rgb(172, 172, 172);
+                
+                td{
+                    padding: 2px 10px;
+                }
+                .fa-star{
+                    font-size: 90%;
+                }
+
+                .line {
+                    border: 1px solid rgb(222, 222, 222);
+                    padding: 3px 150px;
+                    border-radius: 3px;
+                    background-color: rgb(222, 222, 222);
+                    position: relative;
+                }
+
+                .line_green{
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0%;
+                        left: 0;
+                        width: 50%;
+                        height: 6px;
+                        background-color: $verde-acqua;
+                        border-top-left-radius: 3px;
+                        border-bottom-left-radius: 3px;
+                    }
+                }
+
+            }
+       }
+
+
     }
 
 </style>
