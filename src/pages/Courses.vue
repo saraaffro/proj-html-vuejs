@@ -83,9 +83,11 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 01: Simple, attinable goals
                         </a></td>
-                        <td class="minutes">30 minutes</td>
-                        <td class="preview">Preview</td>
-                        <td><a href="#"><i class="fa-solid fa-video"></i></a></td>
+                        <td><div class="minutes">30 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
+                        <td><div>
+                            <a href="#"><i class="fa-solid fa-video"></i></a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -93,9 +95,11 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Live meeting about Infotech Strategies
                         </a></td>
-                        <td><a href="#">
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
                     
                     <tr>
@@ -103,11 +107,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Quiz 1: Yes or No?
                         </a></td>
-                        <td class="questions">3 questions</td>
-                        <td class="minutes">15 minutes</td>
-                        <td><a href="#">
+                        <td><div class="questions">3 questions</div></td>
+                        <td><div class="minutes">15 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -115,11 +121,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Quiz 2: A simple simulation game
                         </a></td>
-                        <td class="questions">0 question</td>
-                        <td class="minutes">50 minutes</td>
-                        <td><a href="#">
+                        <td><div class="questions">0 question</div></td>
+                        <td><div class="minutes">50 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -127,19 +135,21 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 02: A/B Testing
                         </a></td>
-                        <td class="minutes">2 hours</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">2 hours</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
 
                     <tr>
                         <td><a href="#">
                             <i class="fa-regular fa-clock"></i>
                             Quiz 3: Role-play game</a></td>
-                        <td class="questions">1 question</td>
-                        <td class="minutes">1 hour</td>
-                        <td><a href="#">
+                        <td><div class="questions">1 question</div></td>
+                        <td><div class="minutes">1 hour</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -147,11 +157,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Quiz 4: Short Interview
                         </a></td>
-                        <td class="questions">9 questions</td>
-                        <td class="minutes">30 minutes</td>
-                        <td><a href="#">
+                        <td><div class="questions">9 questions</div></td>
+                        <td><div class="minutes">30 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -159,10 +171,12 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 03: Wrap up about A/B testing
                         </a></td>
-                        <td class="minutes">30 minutes</td>
-                        <td><a href="#">
+                        <td><div class="minutes">30 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -170,11 +184,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Quiz 5: 15 mins of Yes/No questions
                         </a></td>
-                        <td class="questions">3 questions</td>
-                        <td class="minutes">10 minutes</td>
-                        <td><a href="#">
+                        <td><div class="questions">3 questions</div></td>
+                        <td><div class="minutes">10 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -182,11 +198,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Quiz 6: Quick answers
                         </a></td>
-                        <td class="questions">0 question</td>
-                        <td class="minutes">10 minutes</td>
-                        <td><a href="#">
+                        <td><div class="questions">0 question</div></td>
+                        <td><div class="minutes">10 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
                 </tbody>
             </table>
@@ -204,10 +222,12 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 04: Customer Advisory Board
                         </a></td>
-                        <td class="minutes">30 minutes</td>
-                        <td><a href="#">
+                        <td><div class="minutes">30 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -215,10 +235,12 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 05: The role of Customer Advisory Board
                         </a></td>
-                        <td class="minutes">45 minutes</td>
-                        <td><a href="#">
+                        <td ><div class="minutes">45 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
                     
                     <tr>
@@ -226,10 +248,12 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Lesson 06: Customer Advisory Board Institutions
                         </a></td>
-                        <td class="minutes">50 minutes</td>
-                        <td><a href="#">
+                        <td><div class="minutes">50 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -237,11 +261,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Mid-term test: 60-min writing test
                         </a></td>
-                        <td class="questions">5 questions</td>
-                        <td class="minutes">1 hour</td>
-                        <td><a href="#">
+                        <td><div class="questions">5 questions</div></td>
+                        <td><div class="minutes">1 hour</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>             
                 </tbody>
             </table>
@@ -259,8 +285,8 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 07: The importance of customer feedback
                         </a></td>
-                        <td class="minutes">35 minutes</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">35 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
 
                     <tr>
@@ -268,10 +294,12 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 08: Customers&apos; roles
                         </a></td>
-                        <td class="minutes">45 minutes</td>
-                        <td><a href="#">
+                        <td><div class="minutes">45 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
                     
                     <tr>
@@ -279,10 +307,12 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Lesson 09: How to conduct the survey
                         </a></td>
-                        <td class="minutes">60 minutes</td>
-                        <td><a href="#">
+                        <td><div class="minutes">60 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>
 
                     <tr>
@@ -290,11 +320,13 @@ export default {
                             <i class="fa-regular fa-clock"></i>
                             Discussion: How to write good survey and poll questions?
                         </a></td>
-                        <td class="questions">0 questions</td>
-                        <td class="minutes">60 minutes</td>
-                        <td><a href="#">
+                        <td><div class="questions">0 questions</div></td>
+                        <td><div class="minutes">60 minutes</div></td>
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>             
                 </tbody>
             </table>
@@ -308,30 +340,30 @@ export default {
                     </tr>    
         
                     <tr>
-                        <td><a href="#">
+                        <td colspan="2"><a href="#">
                             <i class="fa-regular fa-file-lines"></i>
                             Case study 1: The emergence of a new venture
                         </a></td>
-                        <td class="minutes">60 minutes</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">60 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
 
                     <tr>
-                        <td><a href="#">
+                        <td colspan="2"><a href="#">
                             <i class="fa-regular fa-file-lines"></i>
                             Case study 2: The beginning of a new era in marketing
                         </a></td>
-                        <td class="minutes">35 minutes</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">35 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
                     
                     <tr>
-                        <td><a href="#">
+                        <td colspan="2"><a href="#">
                             <i class="fa-regular fa-file-lines"></i>
                             Case study 3: The epic crisis
                         </a></td>
-                        <td class="minutes">60 minutes</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">60 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
 
                     <tr>
@@ -339,27 +371,29 @@ export default {
                             <i class="fa-regular fa-file-lines"></i>
                             Case study 4: The success of a small business
                         </a></td>
-                        <td><a href="#">
+                        <td><div>
+                            <a href="#">
                             <i class="fa-solid fa-lock"></i>
-                        </a></td>
+                            </a>
+                        </div></td>
                     </tr>  
                     
                     <tr>
-                        <td><a href="#">
+                        <td colspan="2"><a href="#">
                             <i class="fa-regular fa-file-lines"></i>
                             Case study 5: Start small but smart
                         </a></td>
-                        <td class="minutes">60 minutes</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">60 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
 
                     <tr>
-                        <td><a href="#">
+                        <td colspan="2"><a href="#">
                             <i class="fa-regular fa-file-lines"></i>
                             Case study 6: How to deal with difficult customers?
                         </a></td>
-                        <td class="minutes">50 minutes</td>
-                        <td class="preview">Preview</td>
+                        <td><div class="minutes">50 minutes</div></td>
+                        <td><div class="preview">Preview</div></td>
                     </tr>
                 </tbody>
             </table>
@@ -387,13 +421,13 @@ export default {
 
         <!-- visualizzazione testo correlato all'elemento tramite condizione : reviews -->
         <div class="container_page" v-if="activeIndex === 3">
-            <p>Contenuto per {{ items[activeIndex] }}</p>
 
-            <h2>Reviews</h2>
-
+            <h3>Reviews</h3>
+            <!-- container_ratings -->
             <div id="container_ratings" class="flex">
                 <div id="av_rating">
                     <span>Average Rating</span>
+                    <!-- container white -->
                     <div id="bg_white">
                         <h1>4.50</h1>
                         <div class="container_stars">
@@ -407,6 +441,7 @@ export default {
                     </div>
                 </div>
 
+                <!-- container table ratings -->
                 <div id="dt_rating">
                     <span>Detailed Rating</span>
 
@@ -471,6 +506,47 @@ export default {
                             <td>0</td>
                         </tr>
                     </table>
+                </div>
+            </div>
+
+            <!-- container reviews -->
+            <div id="container_reviews1" class="flex container_reviews">
+                <img src="/ednawatsonimg.jpeg" alt="img">
+                
+                <div>
+                    <div class="flex">
+                        <h5>EDNAWATSON</h5>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <h6>Cover all my needs</h6>
+                    <p>The course identify things we want to change and then figure out the things that need to be done to create the desired outcome. The course helped me in clearly define problems and generate a wider variety of quality solutions. Support more structures analysis of options leading to better decisions.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex container_reviews">
+                <img src="/owenchristimg.jpg" alt="img">
+                
+                <div>
+                    <div class="flex">
+                        <h5>OWEN CHRIST</h5>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <h6>Engaging & Fun</h6>
+                    <p>This is the third course I attend from you, and I absolutely loved all of them. Especially this one on leadership. Your method of explaining the concepts, fun, engaging and with real-world examples, is excellent. This course will help me a lot in my job, my career, and life in general, and I thank you for that. Thank you for improving the lives of many people with engaging and in-depth courses.</p>
                 </div>
             </div>
         </div>
@@ -580,11 +656,9 @@ export default {
 
         td{
             border:none;
-            padding: 20px;
-
-            &:not(:first-child){
-                text-align: center;
-            }
+            padding: 15px 15px 15px 40px;
+            font-size: 15px;
+            vertical-align: 10px;
         }
 
         td a:hover{
@@ -592,29 +666,31 @@ export default {
             color: $verde-acqua;
         }
 
-        .minutes{
-            color: rgb(255, 145, 0);
-            background-color: rgb(255, 218, 171);
+        td div{
+            width: 110%;
             border-radius: 5px;
-        }
-        .preview{
-            color: white;
-            background-color: $verde-acqua;
-            border-radius: 5px;
+            padding: 5px;
+            line-height: 20px;
+            text-align: center;
 
             &:hover{
                 cursor: pointer;
             }
+        }
+
+        .minutes{
+            color: rgb(255, 145, 0);
+            background-color: rgb(255, 218, 171);   
+        }
+        .preview{
+            color: white;
+            background-color: $verde-acqua;  
+            text-align: center;  
         }
 
         .questions{
             color: rgb(0, 145, 145);
             background-color: rgb(184, 251, 251);
-            border-radius: 5px;
-
-            &:hover{
-                cursor: pointer;
-            }
         }
         
     }
@@ -653,8 +729,17 @@ export default {
         }
     }
 
+    h3{
+        margin: 40px 0;
+    }
+
+    .fa-star{
+        color: rgb(255, 200, 0);
+    }
+
     #container_ratings{
         flex-wrap: wrap;
+        margin-bottom: 50px;
 
         #av_rating{
             margin-right: 6%;
@@ -672,9 +757,6 @@ export default {
 
             }
         }
-        .fa-star{
-                    color: rgb(255, 200, 0);
-                }
 
         #dt_rating{
 
@@ -683,7 +765,11 @@ export default {
                 color: rgb(172, 172, 172);
                 
                 td{
-                    padding: 2px 10px;
+                    padding: 2px 20px 2px 0;
+
+                    &:last-child{
+                        padding-left: 30px;
+                    }
                 }
                 .fa-star{
                     font-size: 90%;
@@ -713,8 +799,37 @@ export default {
 
             }
        }
-
-
     }
+
+    .container_reviews{ 
+        width: 90%;
+
+            img{
+                width: 15%;
+                height: 15%;
+                border-radius: 50%;
+                margin-right: 50px;
+            }
+
+            .flex{
+                justify-content: space-between;
+            }
+
+            h6{
+                margin: 10px 0;
+            }
+       }
+
+       #container_reviews1{
+            .flex{
+                .fa-star:last-child{
+                    color: rgb(222, 222, 222);
+                }
+            }
+       }
+
+       hr{
+        margin-bottom: 40px;
+       }
 
 </style>
