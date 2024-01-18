@@ -7,6 +7,7 @@ import EnjoyCompanionship from '../components/EnjoyCompanionship.vue'
 import TeamHome from '../components/TeamHome.vue'
 import Count from '../components/Count.vue'
 import MostViewed from '../components/MostViewed.vue'
+import FormEmail from '../components/FormEmail.vue'
 
 export default {
 name: "Home",
@@ -19,6 +20,7 @@ components:{
     TeamHome,
     Count,
     MostViewed,
+    FormEmail
 }
 }
 </script>
@@ -32,6 +34,7 @@ components:{
         <TeamHome/>
         <Count/>
         <MostViewed/>
+        <FormEmail/>
     </div>
 </template>
 
