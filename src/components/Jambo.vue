@@ -202,5 +202,5 @@ export default {
         
     }
    
-  
+ 
 </style>

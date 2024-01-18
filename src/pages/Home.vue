@@ -26,7 +26,7 @@ components:{
 </script>
 
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid gx-0">
         <Jambo/>
         <Price/>
         <Benefits/>
