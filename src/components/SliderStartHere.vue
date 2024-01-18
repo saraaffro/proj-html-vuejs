@@ -95,6 +95,13 @@ export default {
     margin-bottom: 50px;
     display: none;
     overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.active {
+        display: block;
+        opacity: 1;
+    }
 
     img{
         height: 100%;
