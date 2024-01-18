@@ -72,7 +72,7 @@ export default{
 
     h6{
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 300;
         text-transform: uppercase;
         line-height: 2em;
         letter-spacing: 2px;
@@ -84,10 +84,11 @@ export default{
         line-height: 1.42em;
         color: #3F3A64;
         padding-bottom: 20px;
+        font-weight: 600;
 
         .best{
             color: $verde-acqua;
-            font-weight: 400;
+            font-weight: 200;
         }
     }
 
@@ -137,11 +138,14 @@ export default{
         color: #3F3A64;
         font-weight: 700;
         transition: 1s ease-in-out;
+        font-size: 20px;
     }
 
     span {
         padding-right: 10px;
         color: rgb(146, 140, 140);
+        font-weight: 200;
+        font-size: 13px;
     }
 
     i {

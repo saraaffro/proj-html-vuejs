@@ -100,10 +100,21 @@ export default {
 
         .title{
             margin-bottom: 20px;
+            
+            h1{
+                font-size: 50px;
+                width: 75%;
+                color: $blu-scuro;
+                font-weight: 600;
+            }
         }
 
         .sub{
             line-height: 30px;
+            color: #9f9cb1;
+            font-size: 18px;
+            font-weight: 300;
+            width: 75%;
         }
     }
 

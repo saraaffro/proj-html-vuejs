@@ -103,6 +103,12 @@ data(){
 
             .title{
                 color: rgb(163, 160, 160);
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+
+            .sub{
+                color: $blu-scuro;
             }
         }
 
@@ -114,7 +120,10 @@ data(){
             color: white;
             margin: 20px 0;
             transition: background-color 0.5s ease-in-out;
-            
+            width: 250px;
+            margin-bottom: 100px;
+            font-size: 14px;
+            font-weight: 500;
 
             &:hover {
                 background-color: $blu-scuro; 

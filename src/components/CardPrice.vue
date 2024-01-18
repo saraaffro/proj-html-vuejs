@@ -72,10 +72,13 @@ props:{
 
     .max-stud-less{
         color: $grigio;
+        font-weight: 200;
+        font-size: 14px;
     }
     
     p{
         font-size: 20px;
+        color: $blu-scuro;
     }
 }
 

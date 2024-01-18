@@ -48,7 +48,7 @@
 
 
 .bg {
-    background: linear-gradient(330deg, transparent 182px, #fff 20px), #f5f7fa;
+    background: linear-gradient(330deg, transparent 182px, #fff 20px), #f5f1ed;
     overflow: hidden;
     border-bottom-right-radius: 10px; 
 }
@@ -118,6 +118,12 @@
 
     p{
         margin-top: 20px;
+        font-weight: 200;
+        width: 80%;
+        font-size: 18px;
+        color: #6e6e6e;
+        line-height: 30px;
+        margin-bottom: 60px;
     }
    
     .link{
@@ -129,6 +135,8 @@
             display: inline-block;
             border-bottom: 1px solid rgb(199, 194, 194);
             transition: border-color 0.5s ease-in-out;
+            font-weight: 300;
+            font-size: 15px;
 
             &:before {
                 content: '';
