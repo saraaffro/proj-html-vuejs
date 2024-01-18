@@ -6,7 +6,7 @@ export default {
             faqList: [
                 { 
                 question: 'How to register online?', 
-                answer: 'Lorem Enrolling in an online class is easy. At MaxCoach, we serve several categories of online learners. Select the student category that you identify with to get started. is simply dummy text of the printing and typesetting industry.', 
+                answer: 'Enrolling in an online class is easy. At MaxCoach, we serve several categories of online learners. Select the student category that you identify with to get started.', 
                 expanded: false 
                 },
                 { 
@@ -50,9 +50,9 @@ export default {
         <h4>SUCCEED WITH <strong>MAXCOACH</strong></h4>
         <h2>Frequently asked questions</h2>
 
-       <div class="container-xl container-fluid-lg row">
+       <div class="container-xl container-fluid-lg row ms_faq">
             <div v-for="(faq, index) in faqList" :key="index" class="faq-item col-12 col-md-6">
-                <div class="question" @click="showAnswer(index)">
+                <div class="question" :class="faq.expanded ? 'active' : ''" @click="showAnswer(index)">
                     {{ faq.question }}
                     <i class="fa-solid" :class="faq.expanded ? 'fa-circle-minus' : 'fa-circle-plus'"></i>
                 </div>
@@ -68,7 +68,11 @@ export default {
 @use '../styles/partial/variables' as *;
 
 section{
-    padding-top: 60px;
+    padding: 60px 0;
+
+    .ms_faq{
+        margin: 0 auto;
+    }
 
     h4{
         color: $blu-scuro;
@@ -85,11 +89,62 @@ section{
         line-height: 50px;
         font-weight: 700;
         width: 80%;
-        margin: 0 auto 30px;
+        margin: 0 auto 60px;
         
         @media all and (max-width: 768px){
             font-size: 26px;
         }
+    }
+
+    .faq-item{
+        margin-bottom: 15px;
+    }
+    .question{
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 0 5px;
+        color: $grigio;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease-in;
+
+        &:hover{
+            background-color: $verde-acqua;
+            color: white;
+            border: none;
+        }
+
+        &:hover .fa-solid{
+            color: white;
+        }
+
+        .fa-solid{
+            font-size: 20px;
+        }
+    }
+
+    .answer{
+        border-radius: 0 0 5px 5px;
+        padding: 25px;
+        color: $grigio;
+        font-size: 15px;
+        font-weight: 100;
+        line-height: 25px;
+        width: 98%;
+        margin: 0 auto;
+        background-color: $bianco;
+        box-shadow: 0 18px 40px rgba(51, 51, 51, 0.1);
+    }
+
+    .active{
+        background-color: $verde-acqua;
+        color: white;
+        border: none;
+        border-radius: 5px 5px 0 0;
+        
     }
 }
 

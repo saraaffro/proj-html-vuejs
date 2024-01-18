@@ -2,12 +2,42 @@
 <script>
     export default{
         name: "EnjoyCompanionship",
+
+
+        methods:{
+        reveal() {
+            let reveals = document.querySelectorAll(".reveal");
+
+        for (let i = 0; i < reveals.length; i++) {
+
+        // La linea di codice let windowHeight = window.innerHeight; serve a ottenere l'altezza della finestra di visualizzazione del browser, ovvero la quantità di spazio verticale disponibile sulla pagina web visibile allo spettatore
+        let windowHeight = window.innerHeight;
+
+        // getBoundingClientRect().top restituisce la distanza tra il bordo superiore dell'elemento e il bordo superiore della finestra di visualizzazione. 
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+
+},
+   
+},
+// window.addEventListener(event, callback): Registra un gestore per un determinato evento sulla finestra, ad esempio "scroll".
+mounted(){
+    window.addEventListener("scroll", this.reveal);
+},
         
     }
 </script>
 
 <template>
-    <div class="container-xl">
+    <div class="bg">
+        <div class="container-xl reveal">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="image">
@@ -37,12 +67,28 @@
             </div>
         </div>
     </div>
+    
+    </div>
+    
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partial/variables' as *;
+
+
+.bg {
+    background: linear-gradient(330deg, transparent 182px, #fff 20px), #f8f8f8;
+    overflow: hidden;
+    border-bottom-right-radius: 10px; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+// ANIMAZIONE INGRANDIMENTO IMG
 .image {
     position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0px 130px 50px -100px rgba(51, 51, 51, 0.22);
 
     .avatar-container {
         overflow: hidden;
@@ -107,6 +153,12 @@
 
     p{
         margin-top: 20px;
+        font-weight: 200;
+        width: 80%;
+        font-size: 18px;
+        color: #6e6e6e;
+        line-height: 30px;
+        margin-bottom: 60px;
     }
    
     .link{
@@ -118,6 +170,8 @@
             display: inline-block;
             border-bottom: 1px solid rgb(199, 194, 194);
             transition: border-color 0.5s ease-in-out;
+            font-weight: 300;
+            font-size: 15px;
 
             &:before {
                 content: '';
@@ -142,5 +196,19 @@
         }
     }
     }
+
+
+    .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
     
 </style>
