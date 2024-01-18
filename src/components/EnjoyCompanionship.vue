@@ -7,7 +7,8 @@
 </script>
 
 <template>
-    <div class="container-xl">
+    <div class="bg">
+        <div class="container-xl">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="image">
@@ -37,10 +38,20 @@
             </div>
         </div>
     </div>
+    
+    </div>
+    
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partial/variables' as *;
+
+
+.bg {
+    background: linear-gradient(330deg, transparent 182px, #fff 20px), #f5f7fa;
+    overflow: hidden;
+    border-bottom-right-radius: 10px; 
+}
 .image {
     position: relative;
 
