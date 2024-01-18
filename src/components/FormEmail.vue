@@ -136,7 +136,7 @@ mounted(){
   opacity: 1;
 }
 
-    @media (max-width: 568px) {
+    @media all and (max-width: 568px) {
     
         input{
             width: 200px;

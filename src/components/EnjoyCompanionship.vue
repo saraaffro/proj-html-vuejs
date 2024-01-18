@@ -198,7 +198,7 @@ mounted(){
     }
 
 
-    .reveal{
+.reveal{
   position: relative;
   transform: translateY(150px);
   opacity: 0;
