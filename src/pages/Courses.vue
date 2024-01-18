@@ -27,544 +27,547 @@ export default {
 </script>
 
 <template>
-    <div id="bg" class="container-xl container-fluid-lg g-0">
-        <a href="/">Home</a>
-        <span id="slash">/</span>
-        <a href="/course">Courses</a>
+    <div id="bg" class="container-fluid-lg">
+        <div class="container-xl">
+            <a href="/">Home</a>
+            <span id="slash">/</span>
+            <a href="/course">Courses</a>
 
-        <div>
-            <h1>Customer-centric Info-Tech Strategies</h1>
-        </div>
-
-        <div id="container_list">
-            <ul>
-                <!-- visualizzazione item in li con applicazione classe active all'elemento cliccato-->
-                <li v-for="(item, index) in items" :key="index" @click="activateItem(index)" :class="{ active: activeIndex === index }">
-                    {{ item }}
-                </li>
-            </ul> 
-        </div>
-
-        <!-- visualizzazione testo correlato all'elemento tramite condizione: Overview-->
-        <div class="container_page" v-if="activeIndex === 0">
-
-            <h2>Course Description</h2>
-            <p>Now more than ever, corporations are investing heavily in IT. The quality of these investments affects the daily work of millions.</p>
-            <p>Yet it&apos;s not uncommon to see industry surveys where the failure rates for IT projects is over 50%. It&apos;s possible to do better and it&apos;s possible to do so consistently. Use the Business Model Canvas to focus your company strategy and facilitate buy-in from stakeholders.</p>
-
-            <div id="container_artist">
-                <img id="artist" src="https://i.ytimg.com/vi_webp/m-X1ExlQ9uE/maxresdefault.webp" alt="img">
-                <img id="icon_play" src="/icon-youtube-play.png" alt="icon">
+            <div>
+                <h1>Customer-centric Info-Tech Strategies</h1>
             </div>
 
-            <p>In this two-week course, we&apos;ll step through major challenges within corporate IT and how to address them with the disciplined use of design thinking, Lean Startup, and agile as a team framework.</p>
-            <p>Translate your work on the Canvas to specific charters in IT. Rapidly prototype strategically-aligned processes for implementation within your IT infrastructure. How do you define a customer-centric strategy you can actually execute? To do strategic IT, you&apos;ve got to have a strategy! Ideally, you need one that&apos;s easy to understand and use as a clear basis for action. </p>
-            <p>That&apos;s what you&apos;ll learn in this course.</p>
+            <div id="container_list">
+                <ul>
+                    <!-- visualizzazione item in li con applicazione classe active all'elemento cliccato-->
+                    <li v-for="(item, index) in items" :key="index" @click="activateItem(index)" :class="{ active: activeIndex === index }">
+                        {{ item }}
+                    </li>
+                </ul> 
+            </div>
 
-            <h2>A Short Description</h2>
-            <p>A customer-centric way of doing business is a way that provides a positive customer experience before and after the sale in order to drive repeat business, enhance customer loyalty and improve business growth.</p>
-            <p>But, a customer-centric company is more than a company that offers good service. Both Amazon and Zappos are prime examples of brands that are customer-centric and have spent years creating a culture around the customer and their needs. Their commitment to delivering customer value is genuine – In fact, Zappos is happy to fire employees if they do not fit within their customer-centric culture!</p>
-            <p>But, how important is being customer-centric? The good news is that&apos;s becoming very important! Econsultancy recently asked what the most important characteristic is in order to establish a truly “digital-native” culture. The answer to that question and leading the responses with 58% was to be customer-centric. </p>
-            <p>Enroll in this course to find out.</p>
-        </div>
+            <!-- visualizzazione testo correlato all'elemento tramite condizione: Overview-->
+            <div class="container_page" v-if="activeIndex === 0">
 
-        <!-- visualizzazione testo correlato all'elemento tramite condizione : Curriculum -->
-        <div class="container_page" v-if="activeIndex === 1">
-            <!-- tabella 1 -->
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td colspan="4"><h4>Change simplification</h4>
-                        <span class="title" >General introduction to customer-centric strategies</span></td>
-                    </tr>    
-        
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 01: Simple, attinable goals
-                        </a></td>
-                        <td><div class="minutes">30 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                        <td><div>
-                            <a href="#"><i class="fa-solid fa-video"></i></a>
-                        </div></td>
-                    </tr>
+                <h2>Course Description</h2>
+                <p>Now more than ever, corporations are investing heavily in IT. The quality of these investments affects the daily work of millions.</p>
+                <p>Yet it&apos;s not uncommon to see industry surveys where the failure rates for IT projects is over 50%. It&apos;s possible to do better and it&apos;s possible to do so consistently. Use the Business Model Canvas to focus your company strategy and facilitate buy-in from stakeholders.</p>
 
-                    <tr>
-                        <td colspan="3"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Live meeting about Infotech Strategies
-                        </a></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Quiz 1: Yes or No?
-                        </a></td>
-                        <td><div class="questions">3 questions</div></td>
-                        <td><div class="minutes">15 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                <div id="container_artist">
+                    <img id="artist" src="https://i.ytimg.com/vi_webp/m-X1ExlQ9uE/maxresdefault.webp" alt="img">
+                    <img id="icon_play" src="/icon-youtube-play.png" alt="icon">
+                </div>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Quiz 2: A simple simulation game
-                        </a></td>
-                        <td><div class="questions">0 question</div></td>
-                        <td><div class="minutes">50 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                <p>In this two-week course, we&apos;ll step through major challenges within corporate IT and how to address them with the disciplined use of design thinking, Lean Startup, and agile as a team framework.</p>
+                <p>Translate your work on the Canvas to specific charters in IT. Rapidly prototype strategically-aligned processes for implementation within your IT infrastructure. How do you define a customer-centric strategy you can actually execute? To do strategic IT, you&apos;ve got to have a strategy! Ideally, you need one that&apos;s easy to understand and use as a clear basis for action. </p>
+                <p>That&apos;s what you&apos;ll learn in this course.</p>
 
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 02: A/B Testing
-                        </a></td>
-                        <td><div class="minutes">2 hours</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
+                <h2>A Short Description</h2>
+                <p>A customer-centric way of doing business is a way that provides a positive customer experience before and after the sale in order to drive repeat business, enhance customer loyalty and improve business growth.</p>
+                <p>But, a customer-centric company is more than a company that offers good service. Both Amazon and Zappos are prime examples of brands that are customer-centric and have spent years creating a culture around the customer and their needs. Their commitment to delivering customer value is genuine – In fact, Zappos is happy to fire employees if they do not fit within their customer-centric culture!</p>
+                <p>But, how important is being customer-centric? The good news is that&apos;s becoming very important! Econsultancy recently asked what the most important characteristic is in order to establish a truly “digital-native” culture. The answer to that question and leading the responses with 58% was to be customer-centric. </p>
+                <p>Enroll in this course to find out.</p>
+            </div>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Quiz 3: Role-play game</a></td>
-                        <td><div class="questions">1 question</div></td>
-                        <td><div class="minutes">1 hour</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+            <!-- visualizzazione testo correlato all'elemento tramite condizione : Curriculum -->
+            <div class="container_page" v-if="activeIndex === 1">
+                <!-- tabella 1 -->
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>Change simplification</h4>
+                            <span class="title" >General introduction to customer-centric strategies</span></td>
+                        </tr>    
+            
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 01: Simple, attinable goals
+                            </a></td>
+                            <td><div class="minutes">30 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                            <td><div>
+                                <a href="#"><i class="fa-solid fa-video"></i></a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Quiz 4: Short Interview
-                        </a></td>
-                        <td><div class="questions">9 questions</div></td>
-                        <td><div class="minutes">30 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                        <tr>
+                            <td colspan="3"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Live meeting about Infotech Strategies
+                            </a></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Quiz 1: Yes or No?
+                            </a></td>
+                            <td><div class="questions">3 questions</div></td>
+                            <td><div class="minutes">15 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 03: Wrap up about A/B testing
-                        </a></td>
-                        <td><div class="minutes">30 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Quiz 2: A simple simulation game
+                            </a></td>
+                            <td><div class="questions">0 question</div></td>
+                            <td><div class="minutes">50 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Quiz 5: 15 mins of Yes/No questions
-                        </a></td>
-                        <td><div class="questions">3 questions</div></td>
-                        <td><div class="minutes">10 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 02: A/B Testing
+                            </a></td>
+                            <td><div class="minutes">2 hours</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Quiz 6: Quick answers
-                        </a></td>
-                        <td><div class="questions">0 question</div></td>
-                        <td><div class="minutes">10 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Quiz 3: Role-play game</a></td>
+                            <td><div class="questions">1 question</div></td>
+                            <td><div class="minutes">1 hour</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                <!-- tabella 2 -->
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td colspan="4"><h4>Customer Advisory Board</h4>
-                        <span class="title">Learn about the basics of Customer Advisory Board</span></td>
-                    </tr>    
-        
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 04: Customer Advisory Board
-                        </a></td>
-                        <td><div class="minutes">30 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Quiz 4: Short Interview
+                            </a></td>
+                            <td><div class="questions">9 questions</div></td>
+                            <td><div class="minutes">30 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 05: The role of Customer Advisory Board
-                        </a></td>
-                        <td ><div class="minutes">45 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Lesson 06: Customer Advisory Board Institutions
-                        </a></td>
-                        <td><div class="minutes">50 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 03: Wrap up about A/B testing
+                            </a></td>
+                            <td><div class="minutes">30 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Mid-term test: 60-min writing test
-                        </a></td>
-                        <td><div class="questions">5 questions</div></td>
-                        <td><div class="minutes">1 hour</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>             
-                </tbody>
-            </table>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Quiz 5: 15 mins of Yes/No questions
+                            </a></td>
+                            <td><div class="questions">3 questions</div></td>
+                            <td><div class="minutes">10 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-            <!-- tabella 3 -->
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td colspan="4"><h4>Feedback survey</h4>
-                        <span>The major things about conducting a survey and manage feedback</span></td>
-                    </tr>    
-        
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 07: The importance of customer feedback
-                        </a></td>
-                        <td><div class="minutes">35 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Quiz 6: Quick answers
+                            </a></td>
+                            <td><div class="questions">0 question</div></td>
+                            <td><div class="minutes">10 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 08: Customers&apos; roles
-                        </a></td>
-                        <td><div class="minutes">45 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Lesson 09: How to conduct the survey
-                        </a></td>
-                        <td><div class="minutes">60 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>
+                    <!-- tabella 2 -->
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>Customer Advisory Board</h4>
+                            <span class="title">Learn about the basics of Customer Advisory Board</span></td>
+                        </tr>    
+            
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 04: Customer Advisory Board
+                            </a></td>
+                            <td><div class="minutes">30 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td><a href="#">
-                            <i class="fa-regular fa-clock"></i>
-                            Discussion: How to write good survey and poll questions?
-                        </a></td>
-                        <td><div class="questions">0 questions</div></td>
-                        <td><div class="minutes">60 minutes</div></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>             
-                </tbody>
-            </table>
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 05: The role of Customer Advisory Board
+                            </a></td>
+                            <td ><div class="minutes">45 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Lesson 06: Customer Advisory Board Institutions
+                            </a></td>
+                            <td><div class="minutes">50 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-            <!-- tabella 4 -->
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td colspan="4"><h4>Customer Behavior Case Studies</h4>
-                        <span class="title">In this section, learners will have a chance to discuss thoroughly the role of customer behaviors in business.</span></td>
-                    </tr>    
-        
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Case study 1: The emergence of a new venture
-                        </a></td>
-                        <td><div class="minutes">60 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Mid-term test: 60-min writing test
+                            </a></td>
+                            <td><div class="questions">5 questions</div></td>
+                            <td><div class="minutes">1 hour</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>             
+                    </tbody>
+                </table>
 
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Case study 2: The beginning of a new era in marketing
-                        </a></td>
-                        <td><div class="minutes">35 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Case study 3: The epic crisis
-                        </a></td>
-                        <td><div class="minutes">60 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
+                <!-- tabella 3 -->
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>Feedback survey</h4>
+                            <span>The major things about conducting a survey and manage feedback</span></td>
+                        </tr>    
+            
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 07: The importance of customer feedback
+                            </a></td>
+                            <td><div class="minutes">35 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="3"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Case study 4: The success of a small business
-                        </a></td>
-                        <td><div>
-                            <a href="#">
-                            <i class="fa-solid fa-lock"></i>
-                            </a>
-                        </div></td>
-                    </tr>  
-                    
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Case study 5: Start small but smart
-                        </a></td>
-                        <td><div class="minutes">60 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 08: Customers&apos; roles
+                            </a></td>
+                            <td><div class="minutes">45 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Lesson 09: How to conduct the survey
+                            </a></td>
+                            <td><div class="minutes">60 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2"><a href="#">
-                            <i class="fa-regular fa-file-lines"></i>
-                            Case study 6: How to deal with difficult customers?
-                        </a></td>
-                        <td><div class="minutes">50 minutes</div></td>
-                        <td><div class="preview">Preview</div></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                        <tr>
+                            <td><a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                Discussion: How to write good survey and poll questions?
+                            </a></td>
+                            <td><div class="questions">0 questions</div></td>
+                            <td><div class="minutes">60 minutes</div></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>             
+                    </tbody>
+                </table>
 
-        <!-- visualizzazione testo correlato all'elemento tramite condizione : Instructor -->
-        <div class="container_page" v-if="activeIndex === 2">
-            <div id="container_instructor" class="flex">
-               
-                <img src="https://secure.gravatar.com/avatar/d0d504142acfde820eef2f11feea6253?s=400&d=mm&r=g" alt="img">
+                <!-- tabella 4 -->
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>Customer Behavior Case Studies</h4>
+                            <span class="title">In this section, learners will have a chance to discuss thoroughly the role of customer behaviors in business.</span></td>
+                        </tr>    
+            
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Case study 1: The emergence of a new venture
+                            </a></td>
+                            <td><div class="minutes">60 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Case study 2: The beginning of a new era in marketing
+                            </a></td>
+                            <td><div class="minutes">35 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Case study 3: The epic crisis
+                            </a></td>
+                            <td><div class="minutes">60 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Case study 4: The success of a small business
+                            </a></td>
+                            <td><div>
+                                <a href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                </a>
+                            </div></td>
+                        </tr>  
+                        
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Case study 5: Start small but smart
+                            </a></td>
+                            <td><div class="minutes">60 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><a href="#">
+                                <i class="fa-regular fa-file-lines"></i>
+                                Case study 6: How to deal with difficult customers?
+                            </a></td>
+                            <td><div class="minutes">50 minutes</div></td>
+                            <td><div class="preview">Preview</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- visualizzazione testo correlato all'elemento tramite condizione : Instructor -->
+            <div class="container_page" v-if="activeIndex === 2">
+                <div id="container_instructor" class="flex">
                 
-                
-                <div>
-                    <h3>Maggie Strickland</h3>
-                    <span class="advanced">/Advanced Educator</span>
-                    <p>Maggie is a brilliant educator, whose life was spent for computer science and love of nature. Being a female, she encountered a lot of obstacles and was forbidden to work in this field by her family. With a true spirit and talented gift, she was able to succeed and set an example for others.</p>
+                    <img src="https://secure.gravatar.com/avatar/d0d504142acfde820eef2f11feea6253?s=400&d=mm&r=g" alt="img">
+                    
+                    
+                    <div>
+                        <h3>Maggie Strickland</h3>
+                        <span class="advanced">/Advanced Educator</span>
+                        <p>Maggie is a brilliant educator, whose life was spent for computer science and love of nature. Being a female, she encountered a lot of obstacles and was forbidden to work in this field by her family. With a true spirit and talented gift, she was able to succeed and set an example for others.</p>
 
-                    <span>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <i class="fa-brands fa-pinterest"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                    </span>
+                        <span>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- visualizzazione testo correlato all'elemento tramite condizione : reviews -->
-        <div class="container_page" v-if="activeIndex === 3">
+            <!-- visualizzazione testo correlato all'elemento tramite condizione : reviews -->
+            <div class="container_page" v-if="activeIndex === 3">
 
-            <h3>Reviews</h3>
-            <!-- container_ratings -->
-            <div id="container_ratings" class="flex">
-                <div id="av_rating">
-                    <span>Average Rating</span>
-                    <!-- container white -->
-                    <div id="bg_white">
-                        <h1>4.50</h1>
-                        <div class="container_stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                <h3>Reviews</h3>
+                <!-- container_ratings -->
+                <div id="container_ratings" class="flex">
+                    <div id="av_rating">
+                        <span>Average Rating</span>
+                        <!-- container white -->
+                        <div id="bg_white">
+                            <h1>4.50</h1>
+                            <div class="container_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <span>(2 ratings)</span>
                         </div>
-                        <span>(2 ratings)</span>
+                    </div>
+
+                    <!-- container table ratings -->
+                    <div id="dt_rating">
+                        <span>Detailed Rating</span>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </td>
+                                <td><div class="line line_green"></div></td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </td>
+                                <td><div class="line line_green"></div></td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </td>
+                                <td><div class="line"></div></td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </td>
+                                <td><div class="line"></div></td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </td>
+                                <td><div class="line"></div></td>
+                                <td>0</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
-                <!-- container table ratings -->
-                <div id="dt_rating">
-                    <span>Detailed Rating</span>
-
-                    <table>
-                        <tr>
-                            <td>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </td>
-                            <td><div class="line line_green"></div></td>
-                            <td>1</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </td>
-                            <td><div class="line line_green"></div></td>
-                            <td>1</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </td>
-                            <td><div class="line"></div></td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </td>
-                            <td><div class="line"></div></td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </td>
-                            <td><div class="line"></div></td>
-                            <td>0</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <!-- container reviews -->
-            <div class="flex container_reviews">
-                <div class="img-container-reviews">
-                    <img src="/ednawatsonimg.jpeg" alt="img">
-                </div>
-                
-                
-                <div>
-                    <div class="flex">
-                        <h5>EDNAWATSON</h5>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
+                <!-- container reviews -->
+                <div class="flex container_reviews">
+                    <div class="img-container-reviews">
+                        <img src="/ednawatsonimg.jpeg" alt="img">
                     </div>
-                    <h6>Cover all my needs</h6>
-                    <p>The course identify things we want to change and then figure out the things that need to be done to create the desired outcome. The course helped me in clearly define problems and generate a wider variety of quality solutions. Support more structures analysis of options leading to better decisions.</p>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="flex container_reviews">
-                
-                <div class="img-container-reviews">
-                    <img class="img-review" src="/owenchristimg.jpg" alt="img">
-                </div>
-               
-                <div>
-                    <div class="flex second-review">
-                        <h5>OWEN CHRIST</h5>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                    
+                    
+                    <div>
+                        <div class="flex">
+                            <h5>EDNAWATSON</h5>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
+                        <h6>Cover all my needs</h6>
+                        <p>The course identify things we want to change and then figure out the things that need to be done to create the desired outcome. The course helped me in clearly define problems and generate a wider variety of quality solutions. Support more structures analysis of options leading to better decisions.</p>
                     </div>
-                    <h6>Engaging & Fun</h6>
-                    <p>This is the third course I attend from you, and I absolutely loved all of them. Especially this one on leadership. Your method of explaining the concepts, fun, engaging and with real-world examples, is excellent. This course will help me a lot in my job, my career, and life in general, and I thank you for that. Thank you for improving the lives of many people with engaging and in-depth courses.</p>
                 </div>
+
+                <hr>
+
+                <div class="flex container_reviews">
+                    
+                    <div class="img-container-reviews">
+                        <img class="img-review" src="/owenchristimg.jpg" alt="img">
+                    </div>
+                
+                    <div>
+                        <div class="flex second-review">
+                            <h5>OWEN CHRIST</h5>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <h6>Engaging & Fun</h6>
+                        <p>This is the third course I attend from you, and I absolutely loved all of them. Especially this one on leadership. Your method of explaining the concepts, fun, engaging and with real-world examples, is excellent. This course will help me a lot in my job, my career, and life in general, and I thank you for that. Thank you for improving the lives of many people with engaging and in-depth courses.</p>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+            
+            <div id="relatedcourses">
+                <h3>Related Courses</h3> 
+                <CardCourses/> 
             </div>
         </div>
-        
-        <div id="relatedcourses">
-            <h3>Related Courses</h3> 
-            <CardCourses/> 
-        </div>
-
 
     </div>
 
@@ -575,7 +578,7 @@ export default {
     @use '../styles/partial/variables' as *;
 
     #bg{
-        background-color: rgb(249, 249, 249);
+        background-color: #fff;
         padding: 15px;
     }
 
@@ -660,10 +663,11 @@ export default {
             font-weight: 200;
             color: $grigio;
             font-size: 15px;
+            width: 75%;
         }
 
         #container_artist{
-            width: 80%;
+            width: 75%;
             position: relative;
             cursor: pointer;
             margin: 50px 0;
@@ -713,17 +717,26 @@ export default {
 
         .minutes{
             color: rgb(206, 125, 20);
-            background-color: #f4ebe7;   
+            background-color: #f4ebe7;  
+            width: 100px; 
+            font-size: 13px;
+            font-weight: 200;
         }
         .preview{
             color: white;
             background-color: $verde-acqua;  
             text-align: center;  
+            width: 100px; 
+            font-size: 13px;
+            font-weight: 200;
         }
 
         .questions{
             color: rgb(32, 179, 179);
             background-color: rgb(203, 236, 236);
+            width: 100px; 
+            font-size: 13px;
+            font-weight: 200;
         }
         
     }
@@ -789,6 +802,7 @@ export default {
                 padding: 30px 40px;
                 margin-top: 20px;
                 text-align: center;
+                box-shadow: 0 0 20px rgba(51, 51, 51, 0.1);
 
                 h1{
                     font-size: 70px;
