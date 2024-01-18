@@ -10,6 +10,7 @@ props:{
 }
 </script>
 
+<!-- CARD GENERATE TRAMITE V-FOR E PROPS (I DATA SONO NEL COMPONENTE PRICE) -->
 <template>
     <div class="card">
         <div class="row">
@@ -36,6 +37,8 @@ props:{
 <style lang="scss" scoped>
 @use '../styles/partial/variables' as *;
 
+
+// ALL'HOVER DELLA CARD
 .card{
     display: flex;
     flex-direction: column;

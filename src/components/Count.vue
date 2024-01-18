@@ -9,12 +9,16 @@
     <div class="container">
         <div class="row  text-center">
             <div class="col-12 col-lg-3">
+
+                <!-- COUNT 1 -->
                 <div class="count first">
                     <strong class="whatis">Successfully trained</strong>
                     <h1 class="number">1790</h1>
                     <h6 class="number-text">ENROLLED LEARNERS</h6>
                 </div>
             </div>
+
+            <!-- COUNT 2 -->
             <div class="col-12 col-lg-3">
                 <div class="count">
                     <strong class="whatis">Proudly Received</strong>
@@ -22,6 +26,8 @@
                     <h6 class="number-text">COUNTRYWIDE AWARDS</h6>
                 </div>
             </div>
+
+            <!-- COUNT 3 -->
             <div class="col-12 col-lg-3">
                 <div class="count">
                     <strong class="whatis">Firmly Established</strong>
@@ -29,6 +35,8 @@
                     <h6 class="number-text">LOCAL BRANCHES</h6>
                 </div>
             </div>
+
+            <!-- COUNT 4 -->
             <div class="col-12 col-lg-3">
                 <div class="count">
                     <strong class="whatis">Getting Featured on</strong>
@@ -92,6 +100,8 @@
 
         .first{
             border-top: 1px solid rgb(235, 227, 227);
+
+            // rimozione linea sinistra
             border-left: none;
         }
     }

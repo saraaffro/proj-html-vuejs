@@ -55,6 +55,7 @@ export default {
                     <!-- radio buttons end -->
 
                     <!-- sliude image start -->
+                    <!-- SLIDER GENERATO TRAMITE DATA -->
                     <div v-for="(slide, index) in slides" :key="index" :class="{ 'slide': true, 'first': index === 0 }">
                         <h4>{{ slide.content }}</h4>
                         <p>{{ slide.text }}</p>
@@ -87,9 +88,6 @@ export default {
 @import '../styles/partial/variables';
 
 // STILI SLIDER
-.container-lg {
-    display: flex;
-}
 
 .slider {
     width: 600px;
@@ -148,6 +146,7 @@ export default {
         justify-content: center;
     }
 
+    // ALL'HOVER DEL LABEL
     .manual-btn {
         border: 2px solid black;
         padding: 5px;
@@ -164,6 +163,10 @@ export default {
         }
     }
 }
+
+
+// utilizzato in combinazione con gli elementi radio per creare un carosello di immagini. Quando un determinato radio input è selezionato (:checked),
+// il selettore generale sibling combinator ~ selezionerà l'elemento con la classe .first che segue immediatamente l'elemento radio selezionato.
 
 #radio1:checked ~ .first{
     margin-left: 0;

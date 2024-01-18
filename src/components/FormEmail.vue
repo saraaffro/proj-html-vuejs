@@ -5,6 +5,8 @@
     }
 </script>
 
+
+<!-- EMAIL INPUT + TITOLO -->
 <template>
  <div class="container-fluid space">
     <div class="container">

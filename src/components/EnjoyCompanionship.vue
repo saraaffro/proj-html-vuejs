@@ -54,6 +54,8 @@
     padding-top: 50px;
     margin-bottom: 50px;
 }
+
+// ANIMAZIONE INGRANDIMENTO IMG
 .image {
     position: relative;
     margin-bottom: 100px;

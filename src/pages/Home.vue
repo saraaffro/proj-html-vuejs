@@ -39,4 +39,7 @@ components:{
 </template>
 
 <style lang="scss" scoped>
+.container-fluid{
+    overflow: hidden;
+}
 </style>
