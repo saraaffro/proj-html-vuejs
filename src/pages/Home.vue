@@ -6,6 +6,7 @@ import Benefits from '../components/Benefits.vue'
 import EnjoyCompanionship from '../components/EnjoyCompanionship.vue'
 import TeamHome from '../components/TeamHome.vue'
 import Count from '../components/Count.vue'
+import MostViewed from '../components/MostViewed.vue'
 
 export default {
 name: "Home",
@@ -17,6 +18,7 @@ components:{
     EnjoyCompanionship,
     TeamHome,
     Count,
+    MostViewed,
 }
 }
 </script>
@@ -29,6 +31,7 @@ components:{
         <EnjoyCompanionship/>
         <TeamHome/>
         <Count/>
+        <MostViewed/>
     </div>
 </template>
 
