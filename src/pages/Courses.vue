@@ -432,15 +432,15 @@ export default {
                     <span>Average Rating</span>
                     <!-- container white -->
                     <div id="bg_white">
-                        <h1>4.50</h1>
+                        <span class="number fs-1">4.50</span>
                         <div class="container_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i><br>
+                            <span>(2 ratings)</span>
                         </div>
-                        <span>(2 ratings)</span>
                     </div>
                 </div>
 
@@ -573,6 +573,14 @@ export default {
 
 <style lang="scss" scoped>
     @use '../styles/partial/variables' as *;
+
+
+
+    span.number{
+        font-size: 70px;
+        font-weight: 500;
+    }
+   
 
     #bg{
         background-color: rgb(249, 249, 249);
